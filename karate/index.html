@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+      <link rel="stylesheet" href="styles4.css">
+  </head>
+  <body>
+    <div>
+    <h1 id="title">Support Request</h1>
+    <p id="description">Allows employees to request support</p>
+  </div>
+
+    <form
+      id="survey-form">
+      <div class="input-container">
+    <label for="name"id="name-label">Name</label>
+    <input type="text" id="name" name="name" placeholder="enter your full name"required minlength="6" maxlength="15">
+    </div>
+
+  <div class="input-container">
+    <label for="email" id="email-label">Email</label>
+    <input type="email" id="email" name="email" placeholder="@google.com">
+  </div>
+
+  <div class="input-container">
+    <label class="number" for="number" id="number-label">Number</label>
+    <input type="text" id="number" name="number" placeholder="enter phone number"required minlength="1" maxlength="10">
+  </div>
+
+  <div class="input-container">
+  <p>Gender</p>
+  <div class="radio-container">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  </div>
+  <div class="radio-container">
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  </div>
+  <div class="radio-container">
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+  </div>
+  </div>
+
+  <div class="input-container">
+  <p>How would you like to be contacted?</p>
+  <div class="radio-container">
+  <input type="checkbox" id="By email" name=" By email" value="By email">
+  <label for="Email">Email</label>
+  </div>
+  <div class="radio-container">
+  <input type="checkbox" id="By phone" name="By phone" value="By phone">
+  <label for="By phone">Phone</label>
+  </div>
+  <div class="radio-container">
+  <input type="checkbox" id="Both phone and email" name="Both phone and email" value="Both phone and email">
+  <label for="phone or email">Both phone and email</label>
+  </div>
+  </div>
+
+<div class="input-container">
+<p>whats the issue</p>
+  <select name="Computers" id="Computers">
+    <option value="Poor network">Poor network</option>
+    <option value="Faulty socketss">Faulty sockets</option>
+    <option value="No light">No light</option>
+    <option value="Faulty Genrator">Faulty Generator</option>
+  </select>
+  </div>
+
+<div class="input-container">
+    <p>Additional details</p>
+    <textarea name="Comments" rows="5" cols="30">
+    </textarea>
+</div>
+
+<div>
+    <button class="submit">Submit</button>
+
+</div>
+
+  </form>
+  </body>
+</html>
