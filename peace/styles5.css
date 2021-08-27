@@ -1,0 +1,70 @@
+body{
+  background-color: #fff5b7;
+  font-size: 20px;
+}
+h1{
+  margin-left: 450px;
+}
+}
+header{
+  font-size: 30px;
+}
+
+div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.p1{
+display: flex;
+justify-content: center;
+}
+
+#nav-bar{
+font-size: 20px;
+position:fixed;
+width:100%;
+left: 0;
+top: 0;
+display:flex;
+justify-content:flex-end;
+}
+
+.nav-link{
+ display:flex;
+ margin-right: 30px;
+
+}
+#header-image{
+ width: 100px;
+ margin: auto;
+ float: left;
+ display: block;
+}
+@media screen and (min-width: 1200px) {
+ #navbar{
+   width: 100%;
+   position: fixed;
+   float:center;
+}
+}
+#video{
+ display: block;
+ margin: auto;
+}
+#email{
+ width:300px;
+ font-size: 15px;
+ margin-left: 500px;
+}
+#submit{
+ margin-left: 550px;
+ width: 200px;
+ color: black;
+ background-color: #f98404;
+ margin-bottom: 100px;
+ margin-top: 20px;
+ font-size: 30px;
+
+}
