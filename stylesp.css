@@ -1,0 +1,303 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  background-size: cover;
+  font-family: Heebo, sans-serif;
+  color: #fff;
+  background: #12243c;
+
+}
+.paragraph{
+  width: 60px;
+}
+/* background-color: hsl(216, 53%, 9%) */
+  /* background-image: url('images/bg-curvy-desktop.svg'); */
+/* linear-gradient(to bottom, #12243c 60%, #33476b 0%); */
+
+.top{
+  display:flex;
+  justify-content: space-between;
+}
+
+.img1{
+  width:90px;
+}
+
+.nav-link{
+  margin-right: 20px;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.middle{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin-left: 375px;
+  text-align: center;
+  color: #fff;
+  margin-top: 40px;
+  background: #12243c;
+}
+
+.btn{
+  border-radius: 18px;
+  width: 200px;
+  background-color: #53B8BB;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.img2{
+  width: 400px;
+}
+
+.p1{
+  width:70%;
+}
+
+.phone{
+  width:21%;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+.first{
+  display:flex;
+  justify-content:space-evenly;
+  text-align: center;
+  margin-top: 40px;
+  background: #12243c;
+}
+
+  /* margin-right: 70px;
+  width:111%; */
+
+
+.img3{
+  width: 40px;
+}
+
+.productive{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  font-size: 14px;
+  color: #fff;
+  font-size: 12px;
+  width: 100%;
+  justify-content: center;
+}
+
+.location{
+  margin-top: 80px;
+  width: 40%;
+}
+
+.img4{
+  width: 34%;
+  margin-left: 15px;
+  margin-right: 70px;
+}
+
+.stay{
+  width: 50%;
+  font-size: 30px;
+}
+
+.link{
+  color: #53B8BB;
+  text-decoration: underline;
+}
+
+.icon{
+  display: flex;
+  font-size: 9px;
+}
+
+.card-body{
+  width:74%;
+  margin-left: 21px;
+  display: grid;
+  grid-template: column;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.card{
+  width:500px;
+  border: 1px;
+  height: 120px;
+  background-color: #0A192D;
+  margin-left: 30px;
+  font-size: 9px;
+  margin-left: 40px;
+}
+
+.ceo{
+  width: 10%;
+  border-radius: 50%;
+  margin-right: 10px;
+  align-content: left;
+  float: left;
+  margin-top: 5px;
+}
+
+.quote{
+  width: 37px;
+  margin-left: 66px;
+  margin-top: 70px;
+}
+
+.huddle{
+  font-size: 5px;
+  margin-top: 5px;
+  margin-bottom: 14px;
+}
+
+.team{
+  margin-top: 20px;
+}
+
+.parent{
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4rem;
+  padding-right: 8rem;
+}
+
+.last{
+  border: 1px;
+  background-color:#081c36;
+  margin: 140px auto 0 auto;
+  height:190px;
+  width:620px;
+  margin-bottom: -70px;
+
+}
+
+.end{
+  margin: auto;
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.btn2{
+  width:300px;
+  border-radius: 18px;
+  background-color: #fff;
+  padding:12px;
+  border:none;
+  margin-left: 80px;
+  font-size: 6px;
+  text-align: left
+  margin-top: 20px;
+}
+
+.btn3{
+  width:150px;
+  border-radius:150px;
+  background-color: #53B8BB;
+  border:none;
+  padding: 10px;
+  margin-left: 15px;
+  font-size: 9px;
+  margin-top: 20px;
+}
+
+.extrme{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.p7{
+  margin-right: 64px;
+  font-size: 11px;
+  margin-left: 44px;ssss
+}
+
+.steep{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 12px;
+  width:80%;
+}
+
+.lorem{
+  width:258px;
+  margin-bottom: 35px;
+  margin-left: 25px;
+}
+
+.social{
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.fa{
+  margin-right: 20px;
+
+}
+.phone{
+  display: inline;
+  margin-right: 10px;
+
+}
+
+.mail{
+  margin-top: 12px;
+  margin-left: 20px;
+}
+
+.cards{
+  width:50%;
+}
+
+.location1{
+  display: -webkit-box;
+  width:50%;
+}
+
+.img6{
+width: 10px;
+margin-top: 15px;
+}
+
+.blog{
+  margin-left: 60px;
+}
+
+.privacy{
+  margin-right: 50px;
+}
+
+.svg{
+  background-color: #030527;
+  height: 280px;
+  padding:100px 0 0 70px;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+
+footer{
+  font-size: 10px;
+  text-align: right;
+
+}
