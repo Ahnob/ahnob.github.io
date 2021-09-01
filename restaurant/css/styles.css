@@ -1,0 +1,153 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #f316ed7a;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin: 2rem;
+}
+
+/* #nav-bar{
+  display: flex;
+} */
+
+header{
+  /* background-color:yellow; */
+  text-decoration: none;
+}
+.nav-link{
+  float: left;
+  text-decoration: none;
+  margin: 30px 5px 0 5px;
+  background-color : #ffc107;
+  color: #000;
+  font-size: 18px;
+  padding: 14px 11px 14px 75px;
+  width:246px;
+  height: 50px;
+  font-weight: bolder;
+}
+
+
+li{
+  list-style: none;
+}
+
+.price{
+  font-weight:lighter;
+  font-size: 60px;
+  font-family:'Montserrat Alternates', sans-serif;
+}
+
+.yellow{
+  border: 1px;
+  background-color: #ffc107;
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+.second-yellow{
+  border: 1px;
+  background-color: #ffc107;
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+/* @ media screen{ max-width:800px
+  .container{
+    font-size: 20px;
+  }
+
+} */
+
+
+/* .middle-container{
+/* display: flex;
+
+} */
+
+.baby-container{
+  position: relative;
+}
+
+.img1{
+  margin-top: 20px;
+  width: 860px;
+  height: 420px;
+}
+
+.tacos1{
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 2px 0 10px 40px;
+  background-color: #ffc107;
+  border: 1px;
+  width: 258px;
+  height: 40px;
+  padding-top: 3px;
+  position: absolute;
+  bottom: 232px;
+  color: #3a2f2f;
+}
+
+.tacos2{
+  font-size: 14px;
+  color: #3a2f2f;
+  font-weight: bolder;
+  margin: 2px 0 10px 40px;
+  background-color: #ffc107;
+  border: 1px;
+  width: 152px;
+  height: 25px;
+  padding-left: 5px;
+  padding-top: 5px;
+  position: absolute;
+  bottom: 195px;
+}
+/* margin-bottom: -230px; */
+
+
+ .grid-container {
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr;
+  grid-auto-rows: 180px;
+  grid-gap: 20px;
+  border: 1px;
+  text-align: center;
+}
+
+.img2{
+  width: 50px;
+  height: 25px;
+}
+
+.img4{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+
+}
+
+.baby-grid{
+  background-color:#fff;
+  text-align: center;
+}
+
+.grid-content{
+  margin-bottom: 10px;
+  font-size: 18px;
+}
