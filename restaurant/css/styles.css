@@ -61,8 +61,11 @@ a:hover{
 
 .middle-container{
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr
+  /* display: flex; */
   margin-top: 20px;
+  /* flex-direction: row; */
 }
 
 .baby-container {
@@ -459,27 +462,33 @@ a:hover{
     }
 
     .middle-container{
-      display: flex;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
       width: 100%;
     }
 
     .grid{
-      display: 
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column-gap: 20px;
+      /* width: 641px; */
     }
 
+
     .yellow{
-      width: 100%;
-      margin-left: 0;
+      width: 400px;
+      margin-left: 20;
     }
 
     .second-yellow{
-      width: 100%;
-      margin-left: 0;
+      width: 400px;
+      margin-left: 20px;
+      margin-top: 1px;
     }
 
 
     .img1{
-      width: 100%;
+      width: 900px;
     }
 
     .last-grid{
