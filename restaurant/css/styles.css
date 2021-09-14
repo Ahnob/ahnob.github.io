@@ -476,19 +476,17 @@ a:hover{
 
 
     .yellow{
-      width: 400px;
-      margin-left: 20;
+      /* margin-left: 10px; */
     }
 
     .second-yellow{
-      width: 400px;
-      margin-left: 20px;
       margin-top: 1px;
+      /* margin-left: 10px; */
     }
 
 
     .img1{
-      width: 900px;
+      width: 800px;
     }
 
     .last-grid{
