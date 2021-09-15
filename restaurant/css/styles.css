@@ -60,12 +60,11 @@ a:hover{
 }
 
 .middle-container{
-  width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr
-  /* display: flex; */
+  grid-template-columns:1fr 1fr;
   margin-top: 20px;
-  /* flex-direction: row; */
+  grid-column-gap: 20px;
+
 }
 
 .baby-container {
@@ -463,7 +462,7 @@ a:hover{
 
     .middle-container{
       display: grid;
-      grid-template-columns: 2fr 1fr;
+      grid-template-columns: 1fr 1fr;
       width: 100%;
     }
 
