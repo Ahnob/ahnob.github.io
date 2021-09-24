@@ -11,9 +11,13 @@ Body{
   padding: 1rem;
 }
 
+p{
+
+}
+
 .nav-items{
   display: grid;
-  grid-row-gap: 10px
+  grid-row-gap: 10px;
 }
 
 .nav-item{
@@ -48,7 +52,7 @@ Body{
   margin:99px 0 10px 12px;
   font-weight: bolder;
   font-size: 20px;
-  color: rgb(58, 47, 47)
+  color: rgb(58, 47, 47);
 }
 
 .tacos2{
@@ -60,4 +64,31 @@ Body{
   font-weight: bolder;
   font-size: 20px;
   color: rgb(58, 47, 47)
+}
+
+
+
+/* .grid{
+  display: flex;
+} */
+
+.yellow{
+  background-color:rgb(255, 193, 7);
+  width: 250px;
+  height: 170px;
+  width:100%;
+  font-size: 20px;
+  margin:20px 0 20px 0;
+}
+
+.second-yellow{
+  background-color:rgb(255, 193, 7);
+  width: 250px;
+  height: 170px;
+  width:100%;
+  font-size: 20px;
+  margin:20px 0 20px 0;
+}
+.price{
+  font-weight:lighter;
 }
