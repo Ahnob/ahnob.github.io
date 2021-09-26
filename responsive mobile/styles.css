@@ -39,10 +39,6 @@ h3{
 
 }
 
-.middle-container{
-
-}
-
 .img1{
   width:100%;
 }
@@ -68,12 +64,6 @@ h3{
   font-size: 20px;
   color: rgb(58, 47, 47)
 }
-
-
-
-/* .grid{
-  display: flex;
-} */
 
 .yellow, .second-yellow{
   background-color:rgb(255, 193, 7);
@@ -133,17 +123,18 @@ h3{
   border: 1px solid;
   width: 100%;
   background-color: white;
-  height: 230px;
+  height: 300px;
 }
 
 
 .content{
   text-align: center;
+
 }
 
 .btn2{
   padding: 10px;
-  margin: 5px;
+  margin-top: 10px;
 }
 
 .single-p{
@@ -153,5 +144,64 @@ h3{
 
 .img6{
   width: 100%;
-  margin-bottom: 10px;
+
 }
+
+.last-grid{
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+
+/* screen sizes */
+@media(min-width: 768px){
+  .grid{
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+  .nav-items{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+
+  }
+
+  .tacos1{
+    margin-top: 221px;
+  }
+
+  .tacos2{
+    margin-top: 250px;
+  }
+
+
+  .third-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img5{
+    width: 200px;
+    margin-top: 50px;
+    }
+
+    .content{
+      margin:50px;
+    }
+
+    .last-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    }
