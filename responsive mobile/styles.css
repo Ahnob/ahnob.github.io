@@ -67,13 +67,14 @@ h3{
 
 .yellow, .second-yellow{
   background-color:rgb(255, 193, 7);
-  width: 250px;
-  height: 170px;
+  width: 100;
+  /* height: 170px; */
   width:100%;
   font-size: 25px;
   margin:20px 0 20px 0;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 
@@ -210,7 +211,6 @@ h3{
       .middle-container{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        width: 100%;
         grid-gap:10px;
 
       }
@@ -219,13 +219,29 @@ h3{
         margin-bottom: 10px;
       }
 
-      .yellow .second-yellow{
-        width: 100%;
-        height: 100%;
+      .yellow{
+        margin-bottom: 0;
       }
+
+      .second-yellow{
+        margin-bottom: 11px;
+        margin-top: 10px;
+      }
+
+      .yellow .second-yellow{
+        padding:80px;
+        width:100%;
+        height: auto;
+      }
+
 
       .grid-container{
         grid-template-columns: repeat(4, 1fr);
+      }
+
+      .grid{
+        grid-template-columns:1fr;
+        display: grid;
       }
 
       .last-grid{
