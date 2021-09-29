@@ -111,6 +111,7 @@ h3{
 
 .lastp{
   padding-bottom: 10px;
+  font-size: 20px;
 }
 
 .img5{
@@ -157,6 +158,10 @@ h3{
 
 /* screen sizes */
 @media(min-width: 768px){
+  h3{
+    font-size: 40px;
+  }
+
   .grid{
     grid-gap: 10px;
     display: grid;
@@ -190,15 +195,21 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 500px;
   }
 
   .img5{
-    width: 200px;
+    width: 459px;
     margin-top: 50px;
     }
 
     .content{
       margin:50px;
+      font-size:30px;
+    }
+
+    .btn2{
+      font-size:20px;
     }
 
     .last-grid{
@@ -248,3 +259,12 @@ h3{
         grid-template-columns: repeat(5, 1fr);
       }
     }
+
+      @media (min-width:1440px){
+        .img1{
+          width: 920px;
+        }
+        .yellow, .second-yellow{
+          padding-top: 133px;
+        }
+      }
