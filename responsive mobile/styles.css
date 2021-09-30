@@ -159,7 +159,7 @@ h3{
 /* screen sizes */
 @media(min-width: 768px){
   h3{
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .grid{
