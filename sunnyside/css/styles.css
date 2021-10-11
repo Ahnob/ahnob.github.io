@@ -55,6 +55,11 @@ a:hover{
   padding: 10px;
 }
 
+h3{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
 .header{
   background-image: url('../images/mobile/image-header.jpg');
   height: 100%;
@@ -117,16 +122,23 @@ a:hover{
 .attribution {
   font-size: 11px;
   text-align: center;
-  }
+}
+
+.learn{
+  font-size: 20px;
+  font-weight: bolder;
+}
 
 .third-p{
   position: absolute;
   margin-top:-60px;
   text-align: center;
 }
+
 .apple{
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
  }
