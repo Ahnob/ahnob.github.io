@@ -42,10 +42,12 @@ a{
 }
 
 p{
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 20px;
-  margin-top: 15px;
+  margin-top: 20px;
   text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 a:hover{
@@ -58,6 +60,15 @@ a:hover{
 h3{
   font-size: 24px;
   font-weight: bolder;
+}
+
+h5{
+  text-align: center;
+  font-weight: 100;
+  font-family: fangsong;
+  margin-top: 20px;
+  margin-bottom:20px;
+  text-transform: uppercase;
 }
 
 .header{
@@ -102,13 +113,16 @@ h3{
   margin-top: 180px;
 }
 
- .grid{
+ /* .grid{
   display: grid;
   grid-template-columns: 1fr;
-}
+  grid-gap: 20px;
+} */
 
 .grid-image{
   width: 100%;
+  margin-bottom: -4px;
+  height:317px;
 }
 
 .write-up{
@@ -117,7 +131,7 @@ h3{
   height: 200px;
   margin-top: 50px;
   text-align: center;
-  font
+
 }
 
 .attribution {
@@ -144,6 +158,30 @@ h3{
 
 }
 
+.comments{
+  width: 100%;
+  background-color: white;
+
+}
+
+.comment-image{
+  border-radius: 30px;
+  width: 20px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .attribution a {
   color: hsl(228, 45%, 44%);
  }
+
+.name{
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.last-p{
+font-size: 20px;
+font-family: fangsong;
+}
