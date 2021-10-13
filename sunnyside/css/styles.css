@@ -111,10 +111,10 @@ h5{
   grid-gap: 20px;
 } */
 
-.grid-image{
+.l-image{
   width: 100%;
   margin-bottom: -4px;
-  height:317px;
+  height:200px;
 }
 
 .write-up{
@@ -164,7 +164,7 @@ h5{
 
 .grid-image{
   width: 100%;
-  height: 200px;
+  height: 317px;
 }
 
 .last-grid{
@@ -184,6 +184,8 @@ h5{
   font-family: fangsong;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .quote{
