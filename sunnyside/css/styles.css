@@ -224,3 +224,18 @@ h5{
   padding-top: 50px;
   justify-content: space-evenly;
 }
+
+@media only screen and (min-width: 600px) {
+    .first-grid{
+      grid-template-columns: repeat(2,1fr);
+      display: grid;
+    }
+
+    .last-grid{
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .second-grid{
+      grid-template-columns: repeat(3,1fr);
+      display: grid;
+    }
+  }
