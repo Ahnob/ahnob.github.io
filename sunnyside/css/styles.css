@@ -133,6 +133,12 @@ h5{
   font-size: 15px;
 }
 
+.first-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+}
+
 .fourth-p{
   position: absolute;
   top:188px;
@@ -222,6 +228,7 @@ h5{
     .first-grid{
       grid-template-columns: repeat(2,1fr);
       display: grid;
+      grid-gap: 0;
     }
 
     .last-grid{
