@@ -128,7 +128,7 @@ h5{
 
 .third-p{
   position: absolute;
-  top:33px;
+  bottom:29px;
   text-align: center;
   font-size: 15px;
 }
@@ -141,7 +141,7 @@ h5{
 
 .fourth-p{
   position: absolute;
-  top:188px;
+  bottom:19px;
   text-align: center;
   font-size: 15px;
 }
@@ -166,6 +166,7 @@ h5{
 
 .grid-image{
   width: 100%;
+  display: flex;
 }
 
 .last-grid{
@@ -237,5 +238,20 @@ h5{
     .second-grid{
       grid-template-columns: repeat(3,1fr);
       display: grid;
+    }
+
+    .third-p{
+      bottom:46px;
+      position: absolute;
+    }
+
+    .fourth-p{
+      bottom:41px;
+    }
+  }
+
+  @media only screen and (min-width:768px) {
+    .cup{
+      order:3;
     }
   }
