@@ -264,6 +264,15 @@ h5{
     /* margin-left: 123px; */
   }
 
+  .third-p{
+    bottom:15px;
+  }
+
+  .fourth-p{
+    bottom: 5px;
+    font-size: 17px;
+  }
+
   .footer{
     justify-content:center;
   }
@@ -278,6 +287,10 @@ h5{
 
   .icon{
     margin-right: 20px;
+  }
+
+  .quote{
+    font-size: 18px;
   }
 }
 
