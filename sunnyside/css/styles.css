@@ -31,7 +31,7 @@ h1{
 
 h4{
   position:absolute;
-  margin-top:-110px;
+  margin-top:-92px;
   margin-left: 111px;
 }
 
@@ -68,6 +68,7 @@ h5{
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .nav-bars{
@@ -126,7 +127,7 @@ h5{
 
 .third-p{
   position: absolute;
-  bottom:29px;
+  bottom:9px;
   text-align: center;
   font-size: 15px;
 }
@@ -139,7 +140,7 @@ h5{
 
 .fourth-p{
   position: absolute;
-  bottom:19px;
+  bottom:1px;
   text-align: center;
   font-size: 15px;
 }
@@ -191,9 +192,9 @@ h5{
   font-size: 15px;
   margin-bottom: 20px;
   margin-top: 20px;
-  text-align: center;
   margin-left: 30px;
   margin-right: 30px;
+  text-align: left;
 }
 
 .footer{
@@ -224,46 +225,66 @@ h5{
 }
 
 @media only screen and (min-width: 600px) {
-    .first-grid{
-      grid-template-columns: repeat(2,1fr);
-      display: grid;
-      grid-gap: 0;
-    }
-
-    .last-grid{
-      grid-template-columns: repeat(4, 1fr);
-    }
-    .second-grid{
-      grid-template-columns: repeat(3,1fr);
-      display: grid;
-    }
-
-    .third-p{
-      bottom:46px;
-      position: absolute;
-    }
-
-    .fourth-p{
-      bottom:41px;
-    }
+  .first-grid{
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    grid-gap: 0;
   }
+
+  .last-grid{
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .second-grid{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+  }
+
+  .third-p{
+    bottom:6px;
+    position: absolute;
+  }
+
+  .fourth-p{
+    bottom:41px;
+  }
+}
 
   @media only screen and (min-width:768px) {
-    .cup{
-      order:3;
-    }
-
-    h1{
-      text-align: center;
-      /* margin-left: 123px; */
-    }
+  .cup{
+    order:3;
   }
 
-  @media only screen and (min-width:1024px) {
-    .write-up{
-      margin-top: 120px;
-      line-height: 1.5;
-    }
-
-
+  html{
+    background-image: url(smaller-image.png);
   }
+
+  h1{
+    text-align: center;
+    /* margin-left: 123px; */
+  }
+
+  .footer{
+    justify-content:center;
+  }
+
+  .foot{
+    margin-right: 20px;
+  }
+
+  .icons{
+    justify-content: center;
+  }
+
+  .icon{
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width:1024px) {
+  .write-up{
+    margin-top: 120px;
+    line-height: 1.5;
+  }
+
+}
