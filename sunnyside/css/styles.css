@@ -264,18 +264,22 @@ h5{
     /* margin-left: 123px; */
   }
 
+  h4{
+    margin-top: -114px;
+  }
+
   .third-p{
     bottom:7px;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .fourth-p{
     bottom: 5px;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .quote{
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -302,4 +306,8 @@ h5{
     line-height: 1.5;
   }
 
+  .header{
+    background-repeat: repeat;
+    background-size: contain;
+  }
 }
