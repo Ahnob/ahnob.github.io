@@ -15,9 +15,10 @@ body{
 }
 
 #nav-ul{
-  display: grid;
   grid-template-rows: 1fr;
   grid-row-gap: 5px;
+  display: none;
+
 }
 
 h1{
@@ -99,9 +100,6 @@ h5{
   width:80%;
 }
 
-.ham{
-  height:20px;
-}
 
 .img1{
   display: block;
@@ -258,9 +256,20 @@ h5{
   }
 }
 
-  @media only screen and (min-width:768px) {
+  @media only screen and (max-width:728px) {
   .cup{
     order:3;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  #nav-ul{
+    grid-template-rows: 1fr;
+    grid-row-gap: 5px;
+    display: none;
+
   }
 
   html{
@@ -269,7 +278,6 @@ h5{
 
   h1{
     text-align: center;
-    /* margin-left: 123px; */
   }
 
   h4{
