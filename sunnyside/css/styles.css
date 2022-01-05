@@ -14,7 +14,7 @@ body{
   height: 100%;
 }
 
-ul{
+#nav-ul{
   display: grid;
   grid-template-rows: 1fr;
   grid-row-gap: 5px;
@@ -85,6 +85,14 @@ h5{
 .nav-bar{
   list-style: none;
   font-size: 18px;
+}
+
+.hamburger{
+  background-color: transparent;
+  border:0;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .nav-items{
