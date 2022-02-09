@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript  | Day 6 </title>
+     <style>
+         #dom{
+             background-color: "#fff";
+             box-shadow: 0px 0px rgba(0, 0, 0, 0.1);
+             margin-left: 40px;
+             margin-right: 40px;
+             border-radius: 15px;
+             padding: 15px;
+             cursor: pointer;
+         }
+     </style>
+    </head>
+    <body>
+            <h1 id="dom">
+                <span>DOM</span>
+                <p id="para">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nemo, obcaecati hic, numquam maxime incidunt blanditiis harum voluptatum dicta illo repudiandae ea doloribus quia autem? Quibusdam excepturi vero nam architecto?
+                </p>
+    
+            </h1>
+     
+        
+        <p class="p"> This is to demonstrate Document object manipulation </p>
+        <P class="p"> This is to demonstrate Document object manipulation </p>
+        <P class="p"> This is to demonstrate Document object manipulation </p>
+
+        <!-- 1.strings(anything between quotation marks ' ' " ")2. Numbers
+        3. Boolean(true or false)
+        4. Array(List) [ ] 5.Objects(maps) { }     -->
+
+        <script>
+            // VARIABLES
+            // 1. var 2. let 3. const
+            let fruits=[ "orange", 23, "apple", true, [ 45, false, "monk"],true];
+            let firstItem = fruits[fruits.length];
+
+            var person = {
+                name: "Anob",
+                age : 58,
+                likes : ["dancing", " laughing"],
+            };
+            
+            // because all the contents are in the "var person" we have o use . the item toget to it or use [with thevalue and quotation marks]
+            // alert (person["name"]);
+        </script>
+
+        <script src="./js/index.js"></script>  
+    </body>
+</html>
