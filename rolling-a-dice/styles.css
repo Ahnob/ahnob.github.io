@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Comforter+Brush&family=Frijole&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    text-align: center;
+    font-family: 'Frijole', cursive;
+    /* background-color: bisque; */
+    
+}
+
+.wrapper{
+    width: 550px;
+    height: 500px;
+    border: 5px solid black;
+    margin: 0 auto;
+    /* background-color: rgb(146, 135, 135); */
+
+
+}
+
+h3{
+    margin: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+.btn{
+    padding: 12px 20px;
+    cursor: pointer;
+    background-color: rgb(105, 122, 116);
+    border: none;
+    font-family: 'Frijole', cursive;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color:rgb(136, 76, 76);
+    color: bisque;
+    font-family: 'Frijole', cursive;
+}
