@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -10,13 +11,14 @@ body{
 .first-div{
     text-align:center;
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
 }
 h1{
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     margin: 50px 10px;
+    text-shadow:  5px #696e70;
 }
 
 .dice-area{
@@ -29,11 +31,11 @@ h1{
 .para{
     margin: 20px 50px;
     font-size: 40px;
+    display: inline-block;
+
 }
 
 img{
     margin-top: 30px;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 200px;
 }
