@@ -1,223 +1,260 @@
-*{
-    margin: 0px;
-    padding:0px;
-    box-sizing: border-box;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Qwigley', cursive; 
-    font-size: 45px;
-    font-weight:100;
-    text-align: center;
-    margin-top: 50px;
-    letter-spacing: 4px;
-}
+.image-1 {
+  height: 110px;
+  margin: 50px auto 50px auto;
+  display: block;
  
- .nav-bar{
-    text-align: center;
-    display: flex;
-    justify-content: center; 
-
 }
 
-
-ul{
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    row-gap: 20px;
+.nav-bar {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
 }
 
-.list-item{
-    font-family: 'Catamaran', sans-serif;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-size: small;
-    margin: 20px;
+.list-items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  align-items: center;
+  
 }
 
-.list-item:hover{
-    background-color: rgb(89, 187, 110);
-    transition-duration: 2s;
-    height: 7px;
-    padding: 3px;
-
+.list-item {
+  font-family: "Catamaran", sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin: 16px 0px;
+  position: relative;
+  line-height: 20px;
+  zoom: 1;
 }
 
-.active{
-    background-color: rgb(89, 187, 110);
-    height:7px;   
+a:hover {
+  transition-duration: 1s;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
+  padding: 0 3px;
 }
 
-
-/* input[type=text] {
-    width: 130px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-size: 40px;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px; 
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-} */
+.sub-nav-list {
+  font-family: "Catamaran", sans-serif;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 16px 0px;
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 .btn {
-    border: none;
-    padding: 12px 16px;
-    width: 40px;
-    background-color: #fff;
+  border: none;
+  padding: 12px 16px;
+  width: 40px;
+  background-color: #fff;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: rgb(28, 179, 78);
 }
 
-  .butt{
-    padding: 14px;
-    font-size: 8px;
-    font-weight: bold;
-    background-color: transparent;
-    border-style: solid;
-    margin: 100px 10px 40px 0px;
-    border-color: #000;
-    cursor: pointer;
-    padding: 10px 25px 10px 25px;
-    
-   
+.butt {
+  padding: 14px;
+  font-size: 8px;
+  font-weight: bold;
+  background-color: transparent;
+  border-style: solid;
+  margin: 100px 10px 40px 0px;
+  border-color: #000;
+  cursor: pointer;
+  padding: 10px 25px 10px 25px;
 }
 
-  .butto{
-    background-color: #fff;
-    padding: 20px 30px 20px 30px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-    border-style: hidden;
-    transition: width 0.4s ease-in-out;
-    cursor: pointer;
-    font-size: 12px; 
-    margin-bottom: 100px;   
+.butto {
+  background-color: #fff;
+  padding: 20px 30px 20px 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  border-style: hidden;
+  transition: width 0.4s ease-in-out;
+  cursor: pointer;
+  font-size: 12px;
+  margin-bottom: 100px;
 }
 
-.butto:hover{
-    background-color: #000;
-    color: #fff;
+.butto:hover {
+  background-color: #000;
+  color: #fff;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 0px 60px 20px 60px ; 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 60px 20px 60px;
 }
 
-  .first-grid{
-    background-color: rgb(128 191 93);
-    text-align: center;
-    width: 100%;
-    grid-gap: 0px;
-    height: 100%;
-    
-}
-
-.img1{
-    width: 100%;
-    height: 100%;
-}
-
-.grid-h4{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    margin-bottom: 45px;
-}
-
-.first-p{
-    color: rgb(32, 27, 27);
-    padding-bottom: 30px;
-    font-size: 25px;
-}
-
-
-
-.sub-nav{
-    display: none;
-    background-color: #fff;
-}
-
-.list-item:hover .sub-nav{
-    display: block;
-    position: absolute;    
-} 
-
-.list-item:hover .sub-nav ul{
-    display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.list-item:hover .sub-nav ul li{
-    width: 100%;
-    padding: 15px;
-    border-bottom: 1px inset;
-    text-align: left;
-    background: #fff;
-    font-weight: lighter;
-    font-size: small;
-    margin: 15px;
-    transition: width 0.5s ease-in-out;
-
-}    
-.list-item:hover .sub-nav ul li:last-child{  
-   border-bottom: none;
-}
-
-.sub-anchor:hover{
-    color: rgba(50, 205, 50, 0.719);
-}
-
-.anchor-active{
-    color: rgba(50, 205, 50, 0.719);
-}
-
-.cards{
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    align-items: center;
-    justify-content: center;
-    margin: 85px 120px;
-    grid-gap: 30px;
-
+.first-grid {
+  background-color: rgb(128 191 93);
+  text-align: center;
 
 }
 
-.card-image{   
-    display: flex;
-    justify-content : center;
-    
-    
+/* .img1 {
+  width: 100%;
+  height: 100%;
+} */
+
+.grid-h4 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  margin-bottom: 45px;
 }
 
-.second-grid-image{
-    width:  400px;
-     height: 500px;
+.first-p {
+  color: rgb(32, 27, 27);
+  padding-bottom: 30px;
+  font-size: 25px;
 }
 
-.card-footer{
-    background: #fff;
-    width: 300px;
-    padding-bottom: 50px;
-    font-family: 'Catamaran', sans-serif;
-    font-weight: 200;
-    font-size: 13px;
-    text-align: center;
-    /* margin-bottom: 30px; */
+
+.sub-nav {
+  visibility: hidden;
+  background-color: #fff;
+  border: 1px solid #e7e7e7;
+  position: absolute;
+  top: 40px;
+  padding: 5px 15px;
+  width: 200px;
 }
-    
+
+.list-item:hover .sub-nav, .list-item:hover .shortcode-menu {
+  visibility: visible;
+  top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+
+.links {
+  position: relative;
+}
+
+.list-item:hover .sub-nav ul li {
+  border-bottom: 1px inset;
+  text-align: left;
+  background: #fff;
+  font-weight: lighter;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.list-item:hover .nav-border,
+.active .nav-border {
+  height: 10px;
+  transition: height 0.3s ease-in-out;
+  left: 0;
+}
+
+.list-item:hover .sub-nav ul li:last-child {
+  border-bottom: none;
+}
+
+.sub-anchor:hover {
+  color: #cded99;
+}
+
+.anchor-active {
+  color: #cded99;
+}
+
+.nav-border {
+  height: 0px;
+  background-color: #cded99;
+  width: 100%;
+  position: absolute;
+  top: 12px;
+  z-index: -1;
+}
+
+.list-item:hover .sub-nav ul li.shortcode {
+  border-bottom: none;
+}
+
+.line {
+  border-right: 2px inset;
+}
+
+.flex {
+  display: flex;
+}
+
+.shortcode-menu {
+  width: 1160px;
+  padding: 30px;
+  vertical-align: middle;
+  visibility: hidden;
+  background-color: #fff;
+  /* border: 1px solid #e7e7e7; */
+  position: absolute;
+  top: 40px;
+  justify-content: space-between;
+  left: -629px;
+  font-weight: 100;
+  border-top: 1px outset;
+}
+
+.shortcode{
+    font-size: 15px;
+    font-weight: 100;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  margin: 85px 120px;
+  grid-gap: 30px;
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+}
+
+.second-grid-image {
+  width: 400px;
+  height: 500px;
+}
+
+.card-footer {
+  background: #fff;
+  width: 300px;
+  padding-bottom: 50px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 200;
+  font-size: 13px;
+  text-align: center;
+  /* margin-bottom: 30px; */
+}
+
+.fa-search:hover {
+  color: #cded99;
+  cursor: pointer;
+}
