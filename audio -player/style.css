@@ -34,3 +34,7 @@ body {
 #play-icon {
   cursor: pointer;
 }
+
+.playing{
+  animation: ;
+}
