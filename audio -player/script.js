@@ -6,7 +6,7 @@
 // playIcon.addEventListener("click", function () {
 //   pauseIcon.style.display = "block";
 //   playIcon.style.display = "none";
-//   audio.play();
+//   audio.play();n
 // });
 
 // pauseIcon.addEventListener("click", function () {

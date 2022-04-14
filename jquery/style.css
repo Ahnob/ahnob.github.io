@@ -1,0 +1,11 @@
+.margin-50 {
+  margin: 50px;
+}
+
+.padding {
+  padding: 20px;
+}
+
+.playing{
+  animation: reverse;
+}
