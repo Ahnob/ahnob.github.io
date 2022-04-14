@@ -23,7 +23,7 @@ body {
 }
 
 .container:hover {
-  box-shadow: 5px 6px 5px 6px gray;
+  /* box-shadow: 5px 6px 5px 6px gray; */
 }
 
 #pause-icon {
@@ -35,6 +35,23 @@ body {
   cursor: pointer;
 }
 
-.playing{
-  animation: ;
+.playing {
+  animation-name: heartbeat;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes heartbeat {
+  0% {
+    box-shadow: 2px 2px 5px 2px gray;
+  }
+
+  50% {
+    box-shadow: 3px 3px 6px 3px gray;
+  }
+
+  100% {
+    box-shadow: 5px 6px 5px 6px gray;
+  }
 }

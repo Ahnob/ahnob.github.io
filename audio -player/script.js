@@ -20,13 +20,13 @@ let audio = new Audio("music/song.mp3");
 $("#play-icon").on("click", function () {
   $("#pause-icon").show();
   $("#play-icon").hide();
-  audio.play();
-  // $("#play-icon").animate({ opacity: "0.5" });
-  audio.currentTime = 0;
+  // audio.play();
+  $(".container").addClass("playing");
 });
 
 $("#pause-icon").on("click", function () {
   $("#play-icon").toggle();
   $("#pause-icon").hide();
   audio.pause();
+  $(".container").removeClass("playing");
 });
