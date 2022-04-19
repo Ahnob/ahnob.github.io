@@ -35,10 +35,13 @@ $(".btn").on("click", function (event) {
 });
 
 function playSound(name){
-console.log(name);
 
   let audio = new Audio("sounds/" + name + ".mp3");
   audio.play();
 
-  
+  playSound(randomChosenColour);
 }
+
+function animatePress(currentColour){
+}
+
