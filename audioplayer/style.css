@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid rgb(155, 148, 148);
 }
 
 .container:hover {
