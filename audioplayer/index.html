@@ -12,26 +12,41 @@
     <title>fondling with icons</title>
   </head>
   <body>
-    <div class="container">
-      <i class="fa fa-5x fa-pause" id="pause-icon"></i>
-      <i class="fa fa-5x fa-play" id="play-icon"></i>
-    </div>
-     <div class="progress-container" id="progress-container">
-          <div class="progress" id="progress"></div>
+    <div>
+       <div class="img-container">
+          <img src="covers/Sia's cover.jpg" alt="music-cover" id="cover" />
         </div>
+        <br/>
+        <h1>SIA - ALIVE</h1>
+      <div class="music-container" id="music-container">
+      <div class="music-info">
+         <div class="progress-container"     id="progress-container">
+          <div class="progress" id="progress"></div>
+         </div>
+      <div class="flex gap">
+          <div class="repeat">
+            <i class="fa fa-2x fa-repeat"></i>
+          </div>
+          <div class="backward">
+             <i class="fa fa-2x fa-fast-backward"></i>
+          </div>
+         <i class="fa fa-2x fa-pause" id="pause-icon"></i>
+         <i class="fa fa-2x fa-play" id="play-icon"></i>
+          <div class="forward">
+            <i class="fa fa-2x fa-fast-forward"></i>
+          </div>
+          <div class="heart">
+            <i class="fa fa-2x fa-heart-o" aria-hidden="true"></i>
+          </div>
+          
+      </div>
+     
       </div>
       <audio src="music/Sia_-_Alive.mp3" id="audio"></audio>
-      <div class="img-container">
-        <img src="covers/Sia's cover.jpg" alt="music-cover" id="cover" />
-      </div>
-    <div class="navigate">
-      <button class="pevious">
-        <i class="fa fa-forward"></i>
-      </button>
-      <button class="forward">
-        <i class="fa fa-backward"></i>
-      </button>
+     
+      
     </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="script.js"></script>
   </body>
