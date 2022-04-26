@@ -45,50 +45,30 @@ loadSong(songs[songIndex]);
 // update songs
 function loadSong(song){
   title.innerText = song
-  audio.src= `music/${song}.mp3`
-  cover.src = `covers/${song}.jpg`
+  audio.src= `music/${song}.mp3`;
+  cover.src = `covers/${song}.jpg`;
 }
 
-// changing the pause and play
-// $("#play-icon").on("click", function () {
-//   $("#pause-icon").show();
-//   $("#play-icon").hide();
-//   audio.play();
-//   $(".container").addClass("playing");
-// });
-
-// $("#pause-icon").on("click", function () {
-//   $("#play-icon").show();
-//   $("#pause-icon").hide();
-//   audio.pause();
-//   $(".container").removeClass("playing");
-// });
+// adding click events to the forward and backward keys
+prevBtn.addEventListener("click", prevSong);
+nextBtn.addEventListener("click", nextSong);
 
 
-function playSong(){
- musicContainer.classList.add("playing")
- playBtn.querySelector("i.fas").classList.remove(fa-play)
- playBtn.querySelector("i.fas").classList.add(fa-pause)
-
-}
-function pauseSong(){
-
-}
 
 // Adding Event Listeners
 
 
 // To get the previous song
 function prevSong(){
-  songIndex--
+  songIndex--;
 
   if (songIndex < 0){
-    songIndex = songs.length-1
+    songIndex = songs.length-1;
   }
 
-  loadSong(songs[songIndex])
+  loadSong(songs[songIndex]);
 
-  audio.play()
+  playSong();
 }
 // To get the next song 
 function nextSong(){
@@ -100,8 +80,21 @@ function nextSong(){
 
   loadSong(songs[songIndex])
 
-  audio.play()
+  playSong()
 }
+
+$("#play-icon").on("click", function () {
+  $("#pause-icon").show();
+  $("#play-icon").hide();
+  audio.play();
+});
+
+$("#pause-icon").on("click", function () {
+  $("#play-icon").show();
+  $("#pause-icon").hide();
+  audio.pause();
+  
+});
 
 
 // prevBtn.addEventListener("click", prevSong)
@@ -167,5 +160,34 @@ function nextSong(){
 // audio.addEventListener("ended", nextSong);
 
 
+// changing the pause and play
 
+
+// playBtn.addEventListener('click', () =>{
+//   const isPlaying = musicContainer.classList.contains("play");
+
+//   if (isPlaying){
+//     pauseSong();
+//   } else {
+//     playSong();
+//   }
+// });
+
+// function playSong(){
+//  musicContainer.classList.add("playing")
+//  playBtn.querySelector("i.fas").classList.remove("fa-play");
+//  playBtn.querySelector("i.fas").classList.add("fa-pause");
+
+//  audio.play();
+
+// }
+
+
+// function pauseSong() {
+//   musicContainer.classList.add("playing");
+//   playBtn.querySelector("i.fas").classList.add("fa-play");
+//   playBtn.querySelector("i.fas").classList.remove("fa-pause");
+
+//   audio.pause();
+// }
 

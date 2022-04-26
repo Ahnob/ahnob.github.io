@@ -35,7 +35,7 @@ body {
   cursor: pointer;
 }
 
-.playing {
+/* .playing {
   animation-name: heartbeat;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -50,7 +50,7 @@ body {
   100% {
     box-shadow: 5px 6px 5px 6px gray;
   }
-}
+} */
 
 #cover {
   width: 400px;
@@ -96,5 +96,5 @@ body {
 }
 
 .music-container.play .music-info{
-  
+
 }
