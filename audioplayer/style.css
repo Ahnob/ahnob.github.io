@@ -87,3 +87,14 @@ body {
 .backward, .heart, .repeat, .forward{
   cursor: pointer;
 }
+
+.btn{
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  
+}
+
+.music-container.play .music-info{
+  
+}
