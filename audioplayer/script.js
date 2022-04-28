@@ -70,5 +70,11 @@ $("#pause-icon").on("click", function () {
   $("#pause-icon").hide();
   audio.pause();
   
-});
+})
+
+function updateProgress (e){
+  const {uation, currentTime} = e.srcElement
+  const progressPercent = {currentTime / duration} =100
+  progress.style.width= `${progreePercent}%`
+}
 
