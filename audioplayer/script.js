@@ -8,6 +8,10 @@ const progress = document.getElementById("progress");
 const progressContainer = document.getElementById("progress-container");
 const title = document.getElementById("title");
 const cover = document.getElementById("cover");
+const rotate = document.querySelector("#rotate")
+
+
+
 
 const songs = [
   "Sia-Alive", "tybello", "Passenger", "Bruno_Mars", "Celine-Dion","jessiej", "Ann-Marie"];
@@ -26,6 +30,37 @@ function loadSong(song){
   cover.src = `covers/${song}.jpg`;
   
 }
+
+function playSong() {
+  musicContainer.classList.add("play");
+  playBtn.querySelector("i.fas").classList.remove(fa-play)
+    playBtn.querySelector('i.fas').classList.add('fa-pause')
+  
+}
+
+function playSong() {
+  musicContainer.classList.add("play");
+  playBtn.querySelector("i.fas").classList.add(fa-play)
+    playBtn.querySelector('i.fas').classList.remove('fa-pause')
+  
+}
+
+
+playBtn.addEventListener("click", () => {
+  const isPlaying = musicContainer.classList.contains("play")
+
+  if(isPlaying){
+    pauseSong()
+
+  }else{
+    playSong()
+  }
+})
+
+// Making it 
+// rotate.addEventListener("click", function () {
+//   document.querySelector("#sample").classList.add("rotating");
+// });
 
 // adding click events to the forward and backward keys
 prevBtn.addEventListener("click", prevSong);
