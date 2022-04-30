@@ -70,16 +70,17 @@ body {
 
 /* styling the song progress container */
 .progress-container {
-  background: rgb(195, 151, 151);
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 6px;
   cursor: pointer;
   margin: 10px 0;
   height: 4px;
   width: 100%;
+  
 }
 
 .progress {
-  background-color: #da2f2f;
+  background-color:#66bfbf;
   border-radius: 5px;
   height: 100%;
   width: 0%;
@@ -95,14 +96,5 @@ body {
   cursor: pointer;
   background:0em;
   
-}
-
-.rotating {
-   animation: rotate 1s infinite;
-}
-
-@keyframes rotate {
-   from { transform: rotate(0deg); }
-   to { transform: rotate(360deg); }
 }
 
