@@ -9,9 +9,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
-.container {
+/* .container {
   border-radius: 50%;
   width: 90px;
   height: 80px;
@@ -25,7 +26,7 @@ body {
 
 .container:hover {
   box-shadow: 5px 6px 5px 6px gray;
-}
+} */
 
 #pause-icon {
   display: none;
@@ -73,7 +74,7 @@ body {
   background: #fff;
   border-radius: 6px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 15px 0;
   height: 4px;
   width: 100%;
   
@@ -98,3 +99,6 @@ body {
   
 }
 
+.play{
+  opacity: 1;
+}

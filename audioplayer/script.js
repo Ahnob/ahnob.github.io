@@ -3,7 +3,7 @@ const playBtn = document.querySelector("#play-icon");
 const prevBtn = document.getElementById("backward");
 const nextBtn = document.getElementById("forward");
 
-const audio = document.getElementById("audio");
+// const audio = document.getElementById("audio");
 const progress = document.getElementById("progress");
 const progressContainer = document.getElementById("progress-container");
 const title = document.getElementById("title");
@@ -23,6 +23,9 @@ const songs = [
 // Keeping track ofsongs
 let songIndex = 0;
 
+let audio = new Audio("/music/Sia-Alive.mp3");
+// audio.play();
+
 // loading songs initially
 loadSong(songs[songIndex]);
 
@@ -33,32 +36,9 @@ function loadSong(song) {
   cover.src = `covers/${song}.jpg`;
 }
 
-function playSong() {
-  musicContainer.classList.add("play");
-  playBtn.querySelector("i.fas").classList.remove(fa - play);
-  playBtn.querySelector("i.fas").classList.add("fa-pause");
-}
-
-function pauseSong() {
-  musicContainer.classList.add("play");
-  playBtn.querySelector("i.fas").classList.add(fa - play);
-  playBtn.querySelector("i.fas").classList.remove("fa-pause");
-}
-
-playBtn.addEventListener("click", () => {
-  const isPlaying = musicContainer.classList.contains("play");
-
-  if (isPlaying) {
-    pauseSong();
-  } else {
-    playSong();
-  }
-});
-
+// Adding Event Listeners for previous and forward icons
 prevBtn.addEventListener("click", prevSong);
 nextBtn.addEventListener("click", nextSong);
-
-// Adding Event Listeners
 
 // To get the previous song
 function prevSong() {
@@ -69,6 +49,7 @@ function prevSong() {
   }
 
   loadSong(songs[songIndex]);
+  playPrev();
 }
 // To get the next song
 function nextSong() {
@@ -79,14 +60,16 @@ function nextSong() {
   }
 
   loadSong(songs[songIndex]);
+  playNext();
 }
 
+console.log(audio);
+
 function updateProgress(e) {
-  const { duration, currentTime} = e.srcElement;
+  const { duration, currentTime } = e.srcElement;
   const progressPercent = (currentTime / duration) * 100;
   progress.style.width = `${progressPercent}%`;
 }
-
 
 audio.addEventListener("timeupdate", updateProgress);
 
