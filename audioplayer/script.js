@@ -22,9 +22,11 @@ const songs = [
 
 // Keeping track ofsongs
 let songIndex = 0;
+let isPlaying = false;
 
-let audio = new Audio("/music/Sia-Alive.mp3");
-// audio.play();
+
+let audio = new Audio ("/music/Sia-Alive.mp3");
+
 
 // loading songs initially
 loadSong(songs[songIndex]);
@@ -49,8 +51,47 @@ function prevSong() {
   }
 
   loadSong(songs[songIndex]);
-  playPrev();
+
+ playPause()
+
 }
+// function playPause(){
+//   if("playBtn exits"){
+//     audio.play();
+//   } else {
+//     audio.pause();
+//   }
+// }
+
+
+
+function playPause() {
+    if (document.getElementById == "play-icon") {
+      audio.pause()
+    } else {
+      audio.play()
+    }
+  }
+
+  // function playPause() {
+  //   if (playBtn) {
+  //     playSong();
+  //   } else {
+  //     pauseSong();
+  //   }
+  // }
+
+  // function playSong(){
+
+  //   isPlaying = true;
+  // }
+
+  // function pauseSong(){
+  //   isPlaying = false;
+  // }
+
+
+
 // To get the next song
 function nextSong() {
   songIndex++;
@@ -60,10 +101,10 @@ function nextSong() {
   }
 
   loadSong(songs[songIndex]);
-  playNext();
+  playPause()
+  
 }
 
-console.log(audio);
 
 function updateProgress(e) {
   const { duration, currentTime } = e.srcElement;

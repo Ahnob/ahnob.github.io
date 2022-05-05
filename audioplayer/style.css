@@ -1,12 +1,14 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(rgb(187, 38, 62), rgb(110, 139, 147));
+  background-image: linear-gradient(rgb(27, 61, 194), rgb(110, 139, 147));
 }
 
 body {
@@ -16,6 +18,15 @@ body {
   flex-direction: column;
 }
 
+#pause-icon {
+  cursor: pointer;  
+  
+  display: none;
+}
+
+#play-icon {
+  cursor: pointer;
+}
 /* .container {
   border-radius: 50%;
   width: 90px;
@@ -32,17 +43,9 @@ body {
   box-shadow: 5px 6px 5px 6px gray;
 } */
 
-#pause-icon {
-  display: none;
-  cursor: pointer;
-}
 
-#play-icon {
-  cursor: pointer;
-}
 
-/* .playing {
-  animation-name: heartbeat;
+  /* animation-name: heartbeat;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -56,7 +59,7 @@ body {
   100% {
     box-shadow: 5px 6px 5px 6px gray;
   }
-} */
+}  */
 
 #cover {
   width: 400px;
@@ -84,7 +87,7 @@ body {
 }
 
 .progress {
-  background-color: #66bfbf;
+  background-color: #aa4850;
   border-radius: 5px;
   height: 100%;
   width: 0%;
