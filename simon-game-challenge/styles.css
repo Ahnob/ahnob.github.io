@@ -28,26 +28,31 @@ body {
 .game-over {
   background-color: red;
   opacity: 0.8;
+  
 }
 
 .red {
   background-color: red;
   zoom: calc(1.1);
+  cursor: pointer;
 }
 
 .green {
   background-color: green;
   zoom: calc(1.1);
+  cursor: pointer;
 }
 
 .blue {
   background-color: blue;
   zoom: calc(1.1);
+  cursor: pointer;
 }
 
 .yellow {
   background-color: yellow;
   zoom: calc(1.1);
+  cursor: pointer;
 }
 
 .pressed {
