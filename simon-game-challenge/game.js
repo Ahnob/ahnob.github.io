@@ -15,6 +15,7 @@
 //       - Change the text to Game Over. Press any key to restart
 
 let randomColor = "";
+let gamePattern = [];
 document.addEventListener("keypress", gameStart);
 
 function gameStart() {
@@ -35,4 +36,21 @@ function playSoundAndAnimate() {
   $("#" + randomColor).animate({ opacity: "0.5" }, 300, function () {
     $("#" + randomColor).animate({ opacity: "1" });
   });
+} 
+
+
+document.addEventListener("click", gameOver);
+
+function gameOver(){
+document.querySelector("#level-title").innerHTML = "Game Over. Press any key to start";
+document.querySelector("body").classList.add("game-over");
+setTimeout(function () {
+  document.querySelector('body').classList.remove("game-over");
+}, 500);
+let audio = new Audio("/sounds/" + randomColor + "wrong.mp3");
+audio.play();
 }
+
+
+
+
