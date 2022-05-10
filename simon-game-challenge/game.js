@@ -33,24 +33,45 @@ function generateNextRandomColor() {
 function playSoundAndAnimate() {
   let audio = new Audio("/sounds/" + randomColor + ".mp3");
   audio.play();
-  $("#" + randomColor).animate({ opacity: "0.5" }, 300, function () {
+  $("#" + randomColor).animate({ opacity: "0.5" }, 200, function () {
     $("#" + randomColor).animate({ opacity: "1" });
   });
-} 
+}
 
+let buttons = document.querySelectorAll(".btn");
+Array.from(buttons).forEach(function(button){
+  button.addEventListener("click", gameOver)
+})
 
-document.addEventListener("click", gameOver);
-
-function gameOver(){
-document.querySelector("#level-title").innerHTML = "Game Over. Press any key to start";
-document.querySelector("body").classList.add("game-over");
-setTimeout(function () {
-  document.querySelector('body').classList.remove("game-over");
-}, 500);
-let audio = new Audio("/sounds/" + randomColor + "wrong.mp3");
-audio.play();
+function gameOver() {
+  document.querySelector("#level-title").innerHTML =
+    "Game Over. Press any key to start";
+  document.querySelector("body").classList.add("game-over");
+  setTimeout(function () {
+    document.querySelector("body").classList.remove("game-over");
+  }, 500);
+    let audio = new Audio("/sounds/" + randomColor + "wrong.mp3");
+    audio.play();
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // document.querySelector("body").addEventListener("click", () => {
