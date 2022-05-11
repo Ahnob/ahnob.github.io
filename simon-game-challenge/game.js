@@ -15,7 +15,7 @@
 //       - Change the text to Game Over. Press any key to restart
 
 let randomColor = "";
-let gamePattern = [];
+let level = 1;
 document.addEventListener("keypress", gameStart);
 
 function gameStart() {
@@ -31,6 +31,7 @@ function generateNextRandomColor() {
 }
 
 function playSoundAndAnimate() {
+  console.log(randomColor);
   let audio = new Audio("/sounds/" + randomColor + ".mp3");
   audio.play();
   $("#" + randomColor).animate({ opacity: "0.5" }, 200, function () {
@@ -39,9 +40,10 @@ function playSoundAndAnimate() {
 }
 
 let buttons = document.querySelectorAll(".btn");
-Array.from(buttons).forEach(function(button){
-  button.addEventListener("click", gameOver)
-})
+Array.from(buttons).forEach(function (button) {
+  // attach this event listener to the buttons
+  button.addEventListener("click", whenUserClicksOnButton);
+});
 
 function gameOver() {
   document.querySelector("#level-title").innerHTML =
@@ -50,28 +52,20 @@ function gameOver() {
   setTimeout(function () {
     document.querySelector("body").classList.remove("game-over");
   }, 500);
-    let audio = new Audio("/sounds/" + randomColor + "wrong.mp3");
-    audio.play();
+  let audio = new Audio("/sounds/wrong.mp3");
+  audio.play();
 }
 
+function whenUserClicksOnButton(event) {
+  let colorClickedOn = event.target.id;
+  if (randomColor === "") {
+    gameOver();
+  } else if (colorClickedOn === randomColor) {
+    generateNextRandomColor();
+    level++
+    document.querySelector("#level-title").innerHTML = "level", level;
+  } else if (colorClickedOn != randomColor) {
+    gameOver();
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // document.querySelector("body").addEventListener("click", () => {
