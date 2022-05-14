@@ -63,9 +63,10 @@ function whenUserClicksOnButton(event) {
   } else if (colorClickedOn === randomColor) {
     generateNextRandomColor();
     level++
-    document.querySelector("#level-title").innerHTML = "level", level;
+    document.querySelector("#level-title").innerHTML = "level" + " " + level;
   } else if (colorClickedOn != randomColor) {
     gameOver();
   }
 }
 
+function playSound(input){}
