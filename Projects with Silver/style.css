@@ -9,7 +9,7 @@ body {
   position: relative;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  overflow: hidden;
+  overflow:hidden;
 }
 
 .first-section {
@@ -20,7 +20,7 @@ body {
   padding: 10px 50px;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  box-shadow: 0 0 5px rgb(247, 243, 243);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .second-section {
@@ -29,7 +29,7 @@ body {
   text-align: center;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 0 0 5px rgb(247, 242, 242);
+  box-shadow: 10px 10px 5px #aaaaaa;
 }
 
 .icons {
