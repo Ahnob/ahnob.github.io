@@ -14,6 +14,14 @@ a{
     text-decoration: none;
 }
 
+.logo{
+    /* border-radius: 50%; */
+    font-size: 15px;
+    /* padding: 25px 0; */
+    /* background-color: rgb(108, 90, 67); */
+    width: 40px;
+}
+
 .nav-list{
     display: flex;
     /* padding: 20px; */
@@ -26,8 +34,8 @@ li{
 }
 
 .nav-link{
-    color: black;  
-    font-size: 20px;
+    color: #000;  
+    font-size: 30px;
     font-weight: bold;  
 }
 
@@ -36,7 +44,7 @@ li{
 }
 
 .nav-link:hover{
-    color:rgb(231, 97, 97);
+    color:#fff;
     transition: 1s;
 }
 
@@ -50,25 +58,34 @@ h1{
     text-align: end;
 }
 
-/* CSS FOR THE LOGIN PAGE */
+.nav-bar{
+    background-color:  rgb(102, 158, 210);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+/* CSS FOR THE LOGIN PAGE, REGISTER AND CONTACT ME PAGE */
 
 .login{
     text-align: center;
-    margin: 50px;
-    width: 400px;
+    margin: auto;
+    width: 500px;
     height: 400px;
     background-color: #fff;
     box-shadow: 0 0 5px rgb(177, 176, 176);
-    border-radius: 20px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   
+    border-bottom: 5px solid rgb(102, 158, 210);   
 }
 
 .input{
-    margin: 5px;
+    margin: 10px;
     background-color: rgb(220, 218, 218);
     padding: 10px 100px 10px 10px;
-    font-size: 15PX;
-    
+    font-size: 15px;
+    border: transparent;
 }
 
 .heading{
@@ -97,11 +114,52 @@ h1{
 }
 
 .register-form{
-    text-align: center;
-    margin: 50px;
     background-color: #fff;
-    box-shadow: 0 0 5px rgb(177, 176, 176);
-    border-radius: 20px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(102, 158, 210);   
+    width: 500px; 
+    box-shadow: 0 0 5px rgb(177, 176, 176);
+    margin: auto ;
+}
 
+.register-p{
+    margin-left: 10px;
+}
+
+.gender{
+    margin: 5px;
+    padding: 5px;
+}
+
+.contact-form{
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(102, 158, 210); 
+    gap: 100px;
+}
+
+
+.contact-input{
+    padding: 20px 120px 20px 10px;
+    margin: 10px;
+}
+
+.message-input{
+    padding: 20px 110px 200px 20px ;
+}
+
+.second-container{
+
+}
+
+.contact-h3{
+    
 }

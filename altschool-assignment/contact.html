@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-      <nav class="nav-bar">
-        <ul class="nav-list flex-gap">
-            <li><a href="/about.html" class="nav-link">About me</a></li>
-            <li><a href="/contact.html" class="nav-link">Contact</a></li>
-            <li><a href="/register.html" class="nav-link">Register</a></li>
-            <li><a href="/login.html" class="nav-link">Login</a></li>
-        </ul> 
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-list flex-gap">
+        <li><a href="/about.html" class="nav-link">About me</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/register.html" class="nav-link">Register</a></li>
+        <li><a href="/login.html" class="nav-link">Login</a></li>
+      </ul>
     </nav>
 
     <section>
-        <h2>Contact me</h2>
-        <form>
-             <input type="text" id="text" placeholder="Enter your name" required>
-        </form>
-        <br/>
-       <form>
-             <input type="text" id="text" placeholder="Enter your name" required>
-        </form>
-        <br/>
-        <form>
-             <input type="text" id="text" placeholder="Write Here">
-        </form>
-        <br/>
-        <form>
-             <input type="text" id="text">
-        </form>
-
+      <div class="contact-form">
+        <div>
+          <h2>Contact me</h2>
+          <form>
+            <input
+              type="text"
+              id="text"
+              placeholder="Enter your name"
+              class="contact-input"
+            />
+          </form>
+          <form>
+            <input
+              type="email"
+              id="email"
+              placeholder="enter your email address"
+              class="contact-input"
+            />
+          </form>
+          <form>
+            <input
+              type="text"
+              id="text"
+              placeholder="Write out your message"
+              class="contact-input message-input"
+            />
+          </form>
+        </div>
+        <div class ="second-container">
+          <h3 class="contact-h3">Contact Details</h3>
+          <p class="contant-ist-p" >Email us:</p>
+          <p class="contact-2nd-p">anobtakon@gmail.com</p>
+        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>

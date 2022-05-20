@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-   <nav class="nav-bar">
-        <ul class="nav-list flex-gap">
-            <li><a href="/about.html" class="nav-link">About me</a></li>
-            <li><a href="/contact.html" class="nav-link">Contact</a></li>
-            <li><a href="/register.html" class="nav-link">Register</a></li>
-            <li><a href="/login.html" class="nav-link">Login</a></li>
-        </ul> 
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h2 class="logo">ANOB</h2>
+      <ul class="nav-list flex-gap">
+        <li><a href="/about.html" class="nav-link">About me</a></li>
+        <li><a href="/contact.html" class="nav-link">Contact</a></li>
+        <li><a href="/register.html" class="nav-link">Register</a></li>
+        <li><a href="/login.html" class="nav-link">Login</a></li>
+      </ul>
     </nav>
 
     <section class="register-form">
-        <h2 class="heading">Register Here</h2>
-        <form>
-            <p>FirstName</p>
-            <input type="text" id="firstname" class="input">
-        </form>
-         <form>
-             <p>Name</p>
-            <input type="text" id="Lastname" class="input">
-         </form>
-         <form>
-             <p>Phone number</p>
-            <input type="tel" id="telephone" class="input">
-        </form>
-         <form>
-            <input type="radio" id="gender" >Male
-            <input type="radio" id="gender">Female
-            <input type="radio" id="gender">Other
-        </form>
-         <form>
-             <p>Country</p>
-            <input type="text" id="country" class="input">
-        </form>
-         <form>
-             <p>State</p>
-            <input type="text" id="state" class="input">
-        </form>
-         <form>
-             <p>Password</p>
-            <input type="password" id="password" class="input">
-        </form>
-         <form>
-             <p>Confirm Password</p>
-            <input type="password" id="password" class="input">
-        </form>
-        <button class="btn">Register</button>
+      <h2 class="heading">Register Here</h2>
+      <form>
+        <p class="register-p">FirstName</p>
+        <input
+          type="text"
+          id="firstname"
+          class="input"
+          placeholder="Firstname"
+        />
+      </form>
+      <form>
+        <p class="register-p">LastName</p>
+        <input type="text" id="Lastname" class="input" placeholder="Name" />
+      </form>
+      <form>
+        <p class="register-p">Phone number</p>
+        <input type="tel" id="telephone" class="input" placeholder="Phone" />
+      </form>
+      <form>
+        <p class="register-p">Country/Province</p>
+        <input
+          type="text"
+          id="country"
+          class="input"
+          placeholder="Country/Province"
+        />
+      </form>
+      <form>
+        <p class="register-p">State</p>
+        <input type="text" id="state" class="input" placeholder="State" />
+      </form>
+      <form>
+        <p class="register-p">Password</p>
+        <input
+          type="password"
+          id="password"
+          class="input"
+          placeholder="Password"
+          required
+        />
+      </form>
+      <form>
+        <p class="register-p">Confirm Password</p>
+        <input
+          type="password"
+          id="password"
+          class="input"
+          placeholder="Confirm Password"
+          required
+        />
+      </form>
+      <label for="gender1" class="gender">
+        <input type="radio" id="name1" name="gender" value="female" /> Male
+        <input type="radio" id="name2" name="gender" value="male" /> Female
+        <input type="radio" id="name3" name="gender" value="male" /> Other
+      </label>
+
+      <button class="btn">Register</button>
     </section>
- 
-</body>
+  </body>
 </html>
