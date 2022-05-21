@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/CSS/styles.css">
   </head>
   <body>
     <nav class="nav-bar">
       <ul class="nav-list flex-gap">
-        <li><a href="/about.html" class="nav-link">About me</a></li>
+        <li><a href="/about.html" class="nav-link active">About me</a></li>
         <li><a href="/contact.html" class="nav-link">Contact</a></li>
         <li><a href="/register.html" class="nav-link">Register</a></li>
+        <li><a href="/calc.html" class="nav-link">Calculator</a></li>
         <li><a href="/login.html" class="nav-link">Login</a></li>
       </ul>
     </nav>
@@ -20,7 +21,7 @@
     <section>
       <div class="contact-form">
         <div>
-          <h2>Contact me</h2>
+          <h2 class="heading contact-margin" >Contact me</h2>
           <form>
             <input
               type="text"
@@ -37,6 +38,16 @@
               class="contact-input"
             />
           </form>
+          <label for="About us" class="contact-margin">How did you hear about us?
+            <select name="hear" id="hear" class="hear-about-us">
+                <option class="contact-margin">Click to choose</option>
+                <option value="word">Word of mouth</option>
+                <option value="twitter">Twitter</option>
+                <option value="linkedin">Linkedin</option>
+                <option value="google">Google</option>
+                <option value="slack">Slack</option>
+            </select>
+          </label>
           <form>
             <input
               type="text"
@@ -45,7 +56,9 @@
               class="contact-input message-input"
             />
           </form>
+          <button class="btn">Contact me</button>
         </div>
+        
         <div class ="second-container">
           <h3 class="contact-h3">Contact Details</h3>
           <p class="contant-ist-p" >Email us:</p>

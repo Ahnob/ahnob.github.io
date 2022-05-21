@@ -11,6 +11,75 @@ html,body{
     overflow: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
+.logo{
+    /* border-radius: 50%; */
+    font-size: 15px;
+    /* padding: 25px 0; */
+    /* background-color: rgb(108, 90, 67); */
+    /* width: 40px; */
+}
+
+.nav-list{
+    display: flex;
+    /* padding: 20px; */
+    justify-content: flex-end;
+    align-items: center;
+}
+
+li{
+    list-style: none;   
+}
+
+.nav-link{
+    color: #000;  
+    font-size: 30px;
+    font-weight: bold;  
+}
+
+.flex-gap{
+    gap: 20px;
+}
+
+.nav-link:hover{
+    color:#fff;
+    transition: 1s;
+}
+
+.about-me-heading{
+    font-weight: 300;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 40px;
+    color:rgb(102, 158, 210) ;
+}
+.flex-gap{
+    display: flex;
+}
+
+.about-myself{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+h1{
+    font: size 40px;
+}
+
+.nav-bar{
+    background-color:  rgb(102, 158, 210);
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.active{
+    color: white;
+}
+
+
 .container{
     width: 300px;
     height: 500px;

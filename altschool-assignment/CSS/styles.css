@@ -19,7 +19,7 @@ a{
     font-size: 15px;
     /* padding: 25px 0; */
     /* background-color: rgb(108, 90, 67); */
-    width: 40px;
+    /* width: 40px; */
 }
 
 .nav-list{
@@ -48,14 +48,23 @@ li{
     transition: 1s;
 }
 
-.about-me{
+.about-me-heading{
     font-weight: 300;
-    margin: 40px;
+    margin: 20px 0;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.flex-gap{
+    display: flex;
+}
+
+.about-myself{
+    font-size: 18px;
+    font-weight: lighter;
 }
 
 h1{
-    padding: 20px;
-    text-align: end;
+    font: size 30px;
 }
 
 .nav-bar{
@@ -113,6 +122,10 @@ h1{
     background-color:rgb(80, 84, 94) ;
 }
 
+.active{
+    color: #fff;
+}
+
 .register-form{
     background-color: #fff;
     overflow: hidden;
@@ -130,10 +143,6 @@ h1{
     margin-left: 10px;
 }
 
-.gender{
-    margin: 5px;
-    padding: 5px;
-}
 
 .contact-form{
     background-color: #fff;
@@ -142,24 +151,54 @@ h1{
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    border-bottom: 5px solid rgb(102, 158, 210); 
     gap: 100px;
+    /* box-shadow: 0 0 2px rgb(177, 176, 176); */
+    border: 1px solid rgb(129, 127, 125);
+    width: 700px;
+    margin: auto;
+    border-radius: 20px;
+    border-bottom: 5px solid rgb(102,158, 210); 
 }
 
+.hear-about-us{
+   /* margin: 10px 0px; */
+   font-size: 15px; 
+   margin: 10px 0px 10px 0px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
 
 .contact-input{
-    padding: 20px 120px 20px 10px;
+    padding: 20px 142px 20px 20px;
     margin: 10px;
 }
 
 .message-input{
-    padding: 20px 110px 200px 20px ;
+    padding: 20px 142px 200px 20px ;
 }
 
-.second-container{
-
+span{
+   color: rgb(102,158, 210) ;
+   font-weight: bolder; 
 }
 
-.contact-h3{
-    
+.contact-margin{
+    margin-left: 10px;
 }
+
+/* .second-container{
+    margin-top: 50px;
+} */
+
+/* .contact-h3{
+    margin: 50px 0px;
+} */
+
+
+
+
+
