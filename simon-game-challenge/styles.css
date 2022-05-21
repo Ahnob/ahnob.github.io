@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  background-color: #011f3f;
+  background-color: #042140;
 }
 
 #level-title {
@@ -8,12 +8,6 @@ body {
   font-size: 3.2rem;
   margin: 5%;
   color: #fef2bf;
-}
-
-.container {
-  display: block;
-  width: 100%;
-  margin: auto;
 }
 
 .btn {

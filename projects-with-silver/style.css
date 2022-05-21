@@ -9,7 +9,7 @@ body {
   position: relative;
   font-family: Arial, sans-serif;
   min-height: 100vh;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .first-section {
@@ -48,6 +48,7 @@ body {
 h2 {
   font-size: 30px;
   margin-top: 30px;
+  letter-spacing: 1px;
 }
 
 #flex {

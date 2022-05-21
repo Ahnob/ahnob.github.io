@@ -25,6 +25,7 @@ function gameStart() {
 
 function generateNextRandomColor() {
   let randomNumber = Math.floor(Math.random() * 4);
+  console.log(randomNumber);
   let colors = ["red", "yellow", "blue", "green"];
   randomColor = colors[randomNumber];
   playSoundAndAnimate();
