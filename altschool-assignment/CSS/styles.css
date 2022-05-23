@@ -16,14 +16,6 @@ a {
   text-decoration: none;
 }
 
-.logo {
-  /* border-radius: 50%; */
-  font-size: 15px;
-  /* padding: 25px 0; */
-  /* background-color: rgb(108, 90, 67); */
-  /* width: 40px; */
-}
-
 .nav-bar {
   background-color: rgb(102, 158, 210);
   padding: 30px;
@@ -32,12 +24,12 @@ a {
 
 .nav-list {
   display: flex;
-  /* padding: 5px; */
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  gap: 50px;
 }
 
- nav li {
+nav li {
   list-style: none;
 }
 
@@ -47,17 +39,13 @@ a {
   font-weight: bold;
 }
 
-.flex-gap {
-  gap: 20px;
-}
-
 .nav-link:hover {
   color: #fff;
   transition: 1s;
 }
 
-.about-me-first-container{
-    overflow: hidden;
+.about-me-first-container {
+  overflow: hidden;
 }
 
 .about-me-heading {
@@ -75,58 +63,47 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
- 
 }
-.card-container{
-    display: flex;
-    justify-content: center;
-}
-
-.card{
-    width:350px;
-    height: 500px;
-    margin: 10px;
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 20px;
+  margin: 40px auto 0;
+  max-width: 1024px;
 }
 
-.body-of-card{
-    margin-top: 80px;
-    margin-bottom: 10px;
-    padding: 5px;
-    background-color: #fff;
-    border-radius:15px;
-    border-bottom: 5px solid rgb(102, 158, 210);
-    box-shadow: 0 0 5px rgb(177, 176, 176);
-    
+.body-of-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  border-bottom: 5px solid rgb(102, 158, 210);
+  box-shadow: 0 0 5px rgb(177, 176, 176);
 }
 
-
-.body-of-card h2{
-    text-align: center;
+.body-of-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
-
 
 h1 {
   font: size 30px;
 }
 
-h3{
-    margin:0 0 10px 0;
-    letter-spacing: 1px;
-    font-weight:400;
+h3 {
+  margin: 0 0 10px 0;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
-
-img{
-    width: 300px;
-    float: right;
+img {
+  width: 300px;
+  float: right;
 }
 
-
-
-.first-paragraph-about{
-    font-size: 18px;
-    letter-spacing: 3;
-
+.first-paragraph-about {
+  font-size: 18px;
+  letter-spacing: 3;
 }
 /* CSS FOR THE LOGIN PAGE, REGISTER AND CONTACT ME PAGE  */
 
@@ -160,6 +137,7 @@ img{
 
 .heading {
   font-size: 30px;
+  margin-top: 20px;
 }
 
 .paragraph {
@@ -235,9 +213,7 @@ img{
   border-radius: 16px;
 }
 
-
 span {
   color: rgb(102, 158, 210);
   font-weight: bolder;
 }
-
