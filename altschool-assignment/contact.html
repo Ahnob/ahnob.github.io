@@ -20,51 +20,44 @@
 
     <section>
       <div class="contact-form">
-        <div>
-          <h2 class="heading contact-margin">Contact me</h2>
-          <form>
-            <input
-              type="text"
-              id="text"
-              placeholder="Enter your name"
-              class="contact-input"
-            />
-          </form>
-          <form>
-            <input
-              type="email"
-              id="email"
-              placeholder="enter your email address"
-              class="contact-input"
-            />
-          </form>
-          <label for="About us" class="contact-margin"
-            >How did you hear about us?
-            <select name="hear" id="hear" class="hear-about-us">
-              <option class="contact-margin">Click to choose</option>
-              <option value="word">Word of mouth</option>
-              <option value="twitter">Twitter</option>
-              <option value="linkedin">Linkedin</option>
-              <option value="google">Google</option>
-              <option value="slack">Slack</option>
-            </select>
-          </label>
-          <form>
-            <input
-              type="text"
-              id="text"
-              placeholder="Write out your message"
-              class="contact-input message-input"
-            />
-          </form>
-          <button class="btn">Contact me</button>
-        </div>
+        <h2 class="heading contact-margin">Contact me</h2>
+        <form>
+          <input
+            type="text"
+            id="text"
+            placeholder="Enter your name"
+            class="contact-input"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+            class="contact-input"
+            required
+          />
+          <label> How did you hear about us? </label>
 
-        <div class="second-container">
-          <h3 class="contact-h3">Contact Details</h3>
-          <p class="contant-ist-p">Email us:</p>
-          <p class="contact-2nd-p">anobtakon@gmail.com</p>
-        </div>
+          <select name="hear" id="hear" class="hear-about-us">
+            <option>Click to choose</option>
+            <option value="word">Word of mouth</option>
+            <option value="twitter">Twitter</option>
+            <option value="linkedin">Linkedin</option>
+            <option value="google">Google</option>
+            <option value="slack">Slack</option>
+          </select>
+
+          
+          <textarea
+            placeholder="Write out your message"
+            rows="8"
+            cols="20"
+            class="contact-input message-input"
+          >
+          </textarea>
+
+          <button class="btn">Contact me</button>
+        </form>
       </div>
     </section>
   </body>

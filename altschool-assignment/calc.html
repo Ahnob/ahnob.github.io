@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/calculator.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Catamaran&family=Comforter+Brush&family=Hurricane&family=Qwigley&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator</title>
   </head>
   <body>
@@ -18,65 +22,114 @@
       </ul>
     </nav>
 
-    <!-- calculator with <table></table> -->
-    <div class="table-calculator">Calculator using Tables</div>
-    
-
-
-
-
-
-    <!-- Calculator using css -->
-    <div class="container">
-      <form>
-        <input type="text" id="text" />
-      </form>
-      <div class="container-arithmetics">
-        <div class="flex">
-          <span class="arithmetics colored-arithemetics">C</span>
-          <span class="arithmetics colored-arithemetics">/</span>
-          <span class="arithmetics colored-arithemetics">*</span>
-          <span class="arithmetics reduced-padding colored-arithemetics"
-            >DEL</span
-          >
+    <div class="both-calculator-container">
+      <div>
+        <h1>Calculator using table</h1>
+        <div class="table-container">
+          <input type="tel" class="input" />
+          <table>
+            <tr>
+              <td>
+                <input type="button" value="c" class="table-input top-color" />
+              </td>
+              <td>
+                <input type="button" value="x" class="table-input top-color" />
+              </td>
+              <td>
+                <input type="button" value="%" class="table-input top-color" />
+              </td>
+              <td>
+                <input type="button" value="/" class="table-input side-color" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" value="7" class="table-input" /></td>
+              <td><input type="button" value="8" class="table-input" /></td>
+              <td><input type="button" value="9" class="table-input" /></td>
+              <td>
+                <input type="button" value="*" class="table-input side-color" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" value="4" class="table-input" /></td>
+              <td><input type="button" value="5" class="table-input" /></td>
+              <td><input type="button" value="6" class="table-input" /></td>
+              <td>
+                <input type="button" value="-" class="table-input side-color" />
+              </td>
+            </tr>
+            <tr>
+              <td><input type="button" value="1" class="table-input" /></td>
+              <td><input type="button" value="2" class="table-input" /></td>
+              <td><input type="button" value="3" class="table-input" /></td>
+              <td>
+                <input type="button" value="+" class="table-input side-color" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input
+                  type="button"
+                  value="."
+                  class="table-input increased-input"
+                />
+              </td>
+              <td><input type="button" value="0" class="table-input" /></td>
+              <td>
+                <input type="button" value="=" class="table-input side-color" />
+              </td>
+            </tr>
+          </table>
         </div>
+      </div>
+      <div>
+        <h1>Calculator using just css</h1>
+        <div class="container">
+          <form>
+            <input type="tel" id="tel" class="input" />
+          </form>
+          <div class="container-arithmetics">
+            <div class="flex">
+              <span class="arithmetics colored-arithemetics">C</span>
+              <span class="arithmetics colored-arithemetics">/</span>
+              <span class="arithmetics colored-arithemetics">*</span>
+              <span class="arithmetics reduced-padding colored-arithemetics"
+                >DEL</span
+              >
+            </div>
 
-        <div class="flex">
-          <span class="arithmetics">7</span>
-          <span class="arithmetics">8</span>
-          <span class="arithmetics">9</span>
-          <span class="arithmetics colored-arithemetics">-</span>
-        </div>
+            <div class="flex">
+              <span class="arithmetics">7</span>
+              <span class="arithmetics">8</span>
+              <span class="arithmetics">9</span>
+              <span class="arithmetics colored-arithemetics">-</span>
+            </div>
 
-        <div class="flex">
-          <span class="arithmetics">4</span>
-          <span class="arithmetics">5</span>
-          <span class="arithmetics">6</span>
-          <span class="arithmetics colored-arithemetics">+</span>
-        </div>
+            <div class="flex">
+              <span class="arithmetics">4</span>
+              <span class="arithmetics">5</span>
+              <span class="arithmetics">6</span>
+              <span class="arithmetics colored-arithemetics">+</span>
+            </div>
 
-        <div class="flex">
-          <span class="arithmetics">1</span>
-          <span class="arithmetics">2</span>
-          <span class="arithmetics">3</span>
-          <span class="arithmetics colored-arithemetics">.</span>
-        </div>
+            <div class="flex">
+              <span class="arithmetics">1</span>
+              <span class="arithmetics">2</span>
+              <span class="arithmetics">3</span>
+              <span class="arithmetics colored-arithemetics">.</span>
+            </div>
 
-        <div class="flex">
-          <span class="arithmetics">%</span>
-          <span class="arithmetics">0</span>
+            <div class="flex">
+              <span class="arithmetics">%</span>
+              <span class="arithmetics">0</span>
 
-          <span class="arithmetics increased-padding colored-arithemetics"
-            >=</span
-          >
+              <span class="arithmetics increased-padding colored-arithemetics"
+                >=</span
+              >
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <section>
-      <div class="container"></div>
-      <div class="header">Calculator</div>
-      <input type="text" class="result" />
-    </section>
   </body>
 </html>

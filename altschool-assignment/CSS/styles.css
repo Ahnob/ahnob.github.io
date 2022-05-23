@@ -1,204 +1,243 @@
-*{
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-html,body{
+html,
+body {
   width: 100%;
   height: 100%;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.logo{
-    /* border-radius: 50%; */
-    font-size: 15px;
-    /* padding: 25px 0; */
-    /* background-color: rgb(108, 90, 67); */
-    /* width: 40px; */
+.logo {
+  /* border-radius: 50%; */
+  font-size: 15px;
+  /* padding: 25px 0; */
+  /* background-color: rgb(108, 90, 67); */
+  /* width: 40px; */
 }
 
-.nav-list{
-    display: flex;
-    /* padding: 20px; */
-    justify-content: flex-end;
-    align-items: center;
+.nav-bar {
+  background-color: rgb(102, 158, 210);
+  padding: 30px;
+  margin-bottom: 20px;
 }
 
-li{
-    list-style: none;   
+.nav-list {
+  display: flex;
+  /* padding: 5px; */
+  justify-content: flex-end;
+  align-items: center;
 }
 
-.nav-link{
-    color: #000;  
-    font-size: 30px;
-    font-weight: bold;  
+ nav li {
+  list-style: none;
 }
 
-.flex-gap{
-    gap: 20px;
+.nav-link {
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.nav-link:hover{
-    color:#fff;
-    transition: 1s;
+.flex-gap {
+  gap: 20px;
 }
 
-.about-me-heading{
-    font-weight: 300;
-    margin: 20px 0;
-    text-transform: capitalize;
-    font-size: 40px;
-}
-.flex-gap{
-    display: flex;
+.nav-link:hover {
+  color: #fff;
+  transition: 1s;
 }
 
-.about-myself{
-    font-size: 18px;
-    font-weight: lighter;
+.about-me-first-container{
+    overflow: hidden;
 }
 
-h1{
-    font: size 30px;
+.about-me-heading {
+  font-weight: 300;
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-size: 40px;
+}
+.flex-gap {
+  display: flex;
 }
 
-.nav-bar{
-    background-color:  rgb(102, 158, 210);
-    padding: 40px;
-    margin-bottom: 20px;
+.about-myself {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
 }
-
-/* CSS FOR THE LOGIN PAGE, REGISTER AND CONTACT ME PAGE */
-
-.login{
-    text-align: center;
-    margin: auto;
-    width: 500px;
-    height: 400px;
-    background-color: #fff;
-    box-shadow: 0 0 5px rgb(177, 176, 176);
+.card-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;   
-    border-bottom: 5px solid rgb(102, 158, 210);   
 }
 
-.input{
+.card{
+    width:350px;
+    height: 500px;
     margin: 10px;
-    background-color: rgb(220, 218, 218);
-    padding: 10px 100px 10px 10px;
-    font-size: 15px;
-    border: transparent;
 }
 
-.heading{
-    font-size: 30px;
-    padding: 30px 0px 15px 0px;
+.body-of-card{
+    margin-top: 80px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border-radius:15px;
+    border-bottom: 5px solid rgb(102, 158, 210);
+    box-shadow: 0 0 5px rgb(177, 176, 176);
+    
 }
 
-.paragraph{
-    margin-top: 10px;
-    font-size: 20px;
+
+.body-of-card h2{
+    text-align: center;
 }
 
-.btn{
-  padding: 15px 30px;  
+
+h1 {
+  font: size 30px;
+}
+
+h3{
+    margin:0 0 10px 0;
+    letter-spacing: 1px;
+    font-weight:400;
+}
+
+
+img{
+    width: 300px;
+    float: right;
+}
+
+
+
+.first-paragraph-about{
+    font-size: 18px;
+    letter-spacing: 3;
+
+}
+/* CSS FOR THE LOGIN PAGE, REGISTER AND CONTACT ME PAGE  */
+
+.login {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(177, 176, 176);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 5px solid rgb(102, 158, 210);
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.input {
+  margin: 10px;
+  background-color: rgb(220, 218, 218);
+  padding: 10px 100px 10px 10px;
+  font-size: 15px;
+  border: transparent;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.paragraph {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
   font-size: 20px;
   border-radius: 50px;
   border: transparent;
-  margin: 20px 20px;
+  margin: 20px 0px;
   cursor: pointer;
   background-color: rgb(102, 158, 210);
+  color: #fff;
 }
 
-.btn:hover{
-    color:rgb(251, 245, 245);
-    background-color:rgb(80, 84, 94) ;
+.btn:hover {
+  color: rgb(251, 245, 245);
+  background-color: rgb(80, 84, 94);
 }
 
-.active{
-    color: #fff;
+.active {
+  color: #fff;
 }
 
-.register-form{
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 5px solid rgb(102, 158, 210);   
-    width: 500px; 
-    box-shadow: 0 0 5px rgb(177, 176, 176);
-    margin: auto ;
+.register-form {
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid rgb(102, 158, 210);
+  width: 500px;
+  box-shadow: 0 0 5px rgb(177, 176, 176);
+  margin: auto;
 }
 
-.register-p{
-    margin-left: 10px;
+.register-p {
+  margin-left: 10px;
+}
+
+.contact-form {
+  background-color: #fff;
+  width: 600px;
+  margin: auto;
+  border-radius: 20px;
+  border-bottom: 5px solid rgb(102, 158, 210);
+  box-shadow: 0 0 5px rgb(177, 176, 176);
+  padding: 25px;
+}
+
+.hear-about-us {
+  /* margin: 10px 0px; */
+  font-size: 15px;
+  margin: 10px 0px 10px 0px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.contact-input {
+  padding: 17px;
+  display: block;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 14px;
+  border-radius: 16px;
 }
 
 
-.contact-form{
-    background-color: #fff;
-    overflow: hidden;
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
-    gap: 100px;
-    /* box-shadow: 0 0 2px rgb(177, 176, 176); */
-    border: 1px solid rgb(129, 127, 125);
-    width: 700px;
-    margin: auto;
-    border-radius: 20px;
-    border-bottom: 5px solid rgb(102,158, 210); 
+span {
+  color: rgb(102, 158, 210);
+  font-weight: bolder;
 }
-
-.hear-about-us{
-   /* margin: 10px 0px; */
-   font-size: 15px; 
-   margin: 10px 0px 10px 0px;
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.contact-input{
-    padding: 20px 142px 20px 20px;
-    margin: 10px;
-}
-
-.message-input{
-    padding: 20px 142px 200px 20px ;
-}
-
-span{
-   color: rgb(102,158, 210) ;
-   font-weight: bolder; 
-}
-
-.contact-margin{
-    margin-left: 10px;
-}
-
-/* .second-container{
-    margin-top: 50px;
-} */
-
-/* .contact-h3{
-    margin: 50px 0px;
-} */
-
-
-
-
 

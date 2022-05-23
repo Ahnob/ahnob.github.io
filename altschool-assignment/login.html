@@ -23,27 +23,38 @@
     </nav>
 
     <section class="login">
-      <h2 class="heading about-me-heading">Login</h2>
+      <label class="heading about-me-heading">Login</label>
       <form class="login-form">
         <input
-          type="text"
+          type="email"
           id="username"
           class="input"
           placeholder="User Email"
           required
-        />
-      </form>
-      <form class="login-form">
+        
+        >
         <input
           type="password"
           id="password"
           class="input"
-          placeholder="Password"
+          placeholder="******"
+          minlength="6" maxlength="12"
           required
-        />
+        >
+        <p class="paragraph">Forgot your Password?</p>
+          <button class="btn">Sign In</button>
       </form>
-      <p class="paragraph">Forgot your Password?</p>
-      <button class="btn">Sign In</button>
+      
     </section>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+ 
