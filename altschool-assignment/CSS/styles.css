@@ -51,7 +51,7 @@ nav li {
 }
 
 .about-me-first-container {
-  overflow: hidden;
+  padding-bottom: 73px;
 }
 
 .about-me-heading {
@@ -224,12 +224,12 @@ ul {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
   height: 25px;
   background: rgb(99, 149, 197);
   width: 100%;
   text-align: center;
+  bottom:0;
 }
 
 .footer-p {
