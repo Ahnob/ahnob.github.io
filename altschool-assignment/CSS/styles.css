@@ -98,6 +98,10 @@ h1 {
   font: size 30px;
 }
 
+.border-bottom-section {
+  padding-bottom: 100px;
+}
+
 h3 {
   margin: 0 0 10px 0;
   letter-spacing: 1px;
@@ -183,7 +187,7 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 5px solid rgb(99, 149, 197);
+  /* border-bottom: 5px solid rgb(99, 149, 197); */
   width: 500px;
   box-shadow: 0 0 5px rgb(177, 176, 176);
   margin: 0px auto 10px auto;
@@ -229,7 +233,7 @@ ul {
   background: rgb(99, 149, 197);
   width: 100%;
   text-align: center;
-  bottom:0;
+  bottom: 0;
 }
 
 .footer-p {
