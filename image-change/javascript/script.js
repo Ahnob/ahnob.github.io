@@ -6,4 +6,4 @@ setInterval(function(){
     let random = Math.floor(Math.random() *4);
     image.src = images[random];
 }, 800);
-console.log(random);
+// console.log(random);
