@@ -92,6 +92,7 @@ nav li {
 
 h1 {
   font: size 30px;
+  margin-top: 200px;
 }
 
 .border-bottom-section {
@@ -123,7 +124,7 @@ ul {
   text-align: center;
   margin: auto;
   width: 500px;
-  height: 400px;
+  height: 500px;
   background-color: #fff;
   box-shadow: 0 0 5px rgb(177, 176, 176);
   display: flex;
@@ -321,5 +322,21 @@ ul {
 
   .logo{
   padding-top:10px
+  }
+
+  .first-image{
+    margin-top: 20px;
+  }
+
+  .register-form{
+    margin-top: 50px;
+  }
+
+  .contact-form{
+    margin-top:120px;
+  }
+
+  .login{
+    margin-top: 70px;
   }
 }
