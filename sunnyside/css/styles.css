@@ -18,7 +18,7 @@ body {
   /* font-family: 'Comforter Brush', cursive; */
 }
 
-#nav-ul {
+/* #nav-ul {
   grid-template-rows: 1fr;
   grid-row-gap: 5px;
   position: fixed;
@@ -27,12 +27,12 @@ body {
   gap: 0;
   flex-direction: column;
   display: flex;
-  background-color:#fff;
+  background-color: #fff;
   width: 70;
   transition: 0.3s;
-}
+} */
 
-#nav-ul.active{
+#nav-ul.active {
   left: 0;
 }
 
@@ -104,7 +104,6 @@ h5 {
   padding: 20px;
 }
 
-
 .logo {
   color: white;
   font-size: 50px;
@@ -163,6 +162,7 @@ h5 {
   font-size: 15px;
   font-weight: bolder;
   border-bottom: 3px solid rgb(244, 82, 82);
+  cursor: pointer;
 }
 
 .third-p {
@@ -305,7 +305,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 728px) {
+@media only screen and (max-width: 768px) {
   .cup {
     order: 3;
   }
@@ -330,7 +330,7 @@ h5 {
     margin-bottom: 50px;
   }
 
-  .desktop{
+  .desktop {
     display: none;
   }
 
@@ -349,18 +349,22 @@ h5 {
     font-size: 19px;
   }
 
-  .first-mobile-grid{
+  .first-mobile-grid {
     display: none;
   }
 
-
   .quote {
-    font-size: 20px;
+    font-size: 26px;
     text-align: center;
   }
 
   .footer {
     justify-content: center;
+  }
+
+  .contact:hover {
+    background-color: rgb(36, 221, 234);
+    color: #fff;
   }
 
   .foot {
@@ -376,9 +380,9 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .quote {
-    font-size: 17px;
+    font-size: 26px;
     color: grey;
   }
 
@@ -395,7 +399,6 @@ h5 {
     background-repeat: no-repeat;
     background-image: ("../images/desktop/image-header.jpg");
   }
-
 
   h3 {
     font-size: 47px;
@@ -427,6 +430,10 @@ h5 {
 
   .a-contact {
     color: #000;
+  }
+
+  .contact:hover {
+    background-color: rgb(36, 135, 234);
   }
 
   .l-image {
