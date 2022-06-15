@@ -25,16 +25,16 @@
   <body>
     <nav class="nav-bar">
       <ul class="nav-menu">
-        <img src="images/logo.svg" alt="logo" />
-        <li class="nav-list flex">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <li class="nav-list">
           <a> Features</a>
-          <img
-            src="images/icon-arrow-down.svg"
-            class="arrow"
-            alt="icon-arrow-down"
+            <img
+              src="images/icon-arrow-down.svg"
+              class="arrow"
+              alt="icon-arrow-down"
           />
         </li>
-        <li class="nav-list flex">
+        <li class="nav-list">
           <a> Company </a>
           <img
             src="images/icon-arrow-down.svg"
@@ -59,34 +59,67 @@
       </ul>
     </nav>
 
-    <div class="flex">
-      <div>
-        <h1>Make remote work</h1>
-        <p class="paragraph">
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button>Learn more</button>
-      </div>
-      <div>
-        <img
-          class="desktop-view"
-          src="/images/image-hero-desktop.png"
-          alt="hero-image"
-        />
-        <img
-          class="mobile-view"
-          src="/images/image-hero-mobile.png"
-          alt="hero-image"
-        />
+    <div class="container">
+      <div class="second-container">
+        <div class="third-container">
+          <h1>Make</h1>
+          <h1>remote work</h1>
+          <div class="paragraph-container">
+            <p class="paragraph">
+              Get your team in sync, no matter your location.
+            </p>
+            <p class="paragraph">
+              Streamline processes, create team rituals, and
+            </p>
+            <p class="paragraph">watch productivity soar.</p>
+          </div>
+          <button>Learn more</button>
+          <div class="images">
+            <img
+              src="/intro-section-with-dropdown-navigation-main/images/client-databiz.svg"
+              alt="databiz"
+              class="icons"
+            />
+
+            <img
+              src="/intro-section-with-dropdown-navigation-main/images/client-audiophile.svg"
+              alt="audiophile"
+              class="icons"
+            />
+
+            <img
+              src="/intro-section-with-dropdown-navigation-main/images/client-meet.svg"
+              alt="meet"
+              class="icons"
+            />
+
+            <img
+              src="/intro-section-with-dropdown-navigation-main/images/client-maker.svg"
+              alt="maker"
+              class="icons"
+            />
+          </div>
+        </div>
+        <div>
+          <img
+            class="desktop-view img"
+            src="/intro-section-with-dropdown-navigation-main/images/image-hero-desktop.png"
+            alt="hero-image"
+          />
+          <img
+            class="mobile-view"
+            src="/intro-section-with-dropdown-navigation-main/images/image-hero-mobile.png"
+            alt="hero-image"
+          />
+        </div>
       </div>
     </div>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Anob Takon</a>.
-    </div>
+    </footer>
   </body>
 </html>
