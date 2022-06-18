@@ -55,6 +55,10 @@ a {
   gap: 20px;
 }
 
+.drop-down-image{
+  padding-right: 8px;
+}
+
 .logo {
   margin-right: 10px;
 }

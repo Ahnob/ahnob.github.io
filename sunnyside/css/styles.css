@@ -13,7 +13,7 @@ body {
   font-family: sans-serif;
   width: 100%;
   height: 100%;
-  background-image: url("smaller-image.png");
+  /* background-image: url("smaller-image.png"); */
   background-repeat: no-repeat;
   /* font-family: 'Comforter Brush', cursive; */
 }
@@ -75,7 +75,7 @@ h3 {
   font-weight: bolder;
 }
 
-.desktop {
+.desktop-view {
   display: none;
 }
 
@@ -119,6 +119,7 @@ h5 {
   background-color: white;
   color: #000;
   border-radius: 50px;
+  text-transform: uppercase;
 }
 
 .hamburger {
@@ -165,6 +166,23 @@ h5 {
   cursor: pointer;
 }
 
+.learn-yellow {
+  font-size: 15px;
+  font-weight: bolder;
+  border-bottom: 3px solid rgb(248, 248, 36);
+  cursor: pointer;
+}
+
+.learn-yellow:hover {
+  border-radius: 6px;
+  border-bottom: 5px solid rgb(248, 248, 36);
+}
+
+.learn-red:hover {
+  border-bottom: 5px solid rgb(244, 82, 82);
+  border-radius: 6px;
+}
+
 .third-p {
   position: absolute;
   top: 30px;
@@ -189,6 +207,7 @@ h5 {
 .orange {
   text-align: center;
   position: relative;
+  /* display: grid; */
 }
 
 .comments {
@@ -247,6 +266,11 @@ h5 {
   gap: 20px;
 }
 
+.footer:active {
+  cursor: pointer;
+  color: #fff;
+}
+
 .footer-container {
   background-color: #129185cf;
   padding: 30px;
@@ -269,6 +293,11 @@ h5 {
   gap: 20px;
 }
 
+.icons:active {
+  cursor: pointer;
+  color: #fff;
+}
+
 @media only screen and (min-width: 600px) {
   .first-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -281,7 +310,7 @@ h5 {
   }
 
   .second-grid-container {
-    margin-top: 100px;
+    margin: 100px 0;
   }
 
   .second-grid {
@@ -314,9 +343,6 @@ h5 {
     display: none;
   }
 
-  .first-mobile-grid {
-    display: none;
-  }
 
   #nav-ul {
     grid-template-columns: repeat(4, 1fr);
@@ -330,8 +356,16 @@ h5 {
     margin-bottom: 50px;
   }
 
-  .desktop {
+  .mobile-view{
     display: none;
+  }
+
+  /* .header{
+    background-image: url("../images/desktop/image-header.jpg");
+  } */
+
+  .desktop-view {
+    display: block;
   }
 
   .third-p {
@@ -354,7 +388,7 @@ h5 {
   }
 
   .quote {
-    font-size: 26px;
+    font-size: 20px;
     text-align: center;
   }
 
@@ -380,13 +414,13 @@ h5 {
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .quote {
     font-size: 26px;
     color: grey;
   }
 
-  .mobile {
+  .mobile-view {
     display: none;
   }
 
@@ -412,7 +446,7 @@ h5 {
   }
 
   .third-p {
-    top: -140px;
+    top: -130px;
     font-size: 25px;
   }
 
@@ -420,7 +454,7 @@ h5 {
     font-size: 25px;
   }
 
-  .first-mobile-grid {
+  .mobile-view{
     display: none;
   }
 
@@ -430,6 +464,7 @@ h5 {
 
   .a-contact {
     color: #000;
+    text-transform: uppercase;
   }
 
   .contact:hover {
@@ -446,11 +481,25 @@ h5 {
     display: grid;
   }
 
+  .desktop-view{
+    display: block;
+  }
+
   .hamburger {
     display: none;
   }
 
   .first-paragraph-about {
     margin: 0 20px;
+  }
+
+  .icon:hover {
+    cursor: pointer;
+    background-color: #fff;
+  }
+
+  .foot:hover {
+    color: #fff;
+    cursor: pointer;
   }
 }
