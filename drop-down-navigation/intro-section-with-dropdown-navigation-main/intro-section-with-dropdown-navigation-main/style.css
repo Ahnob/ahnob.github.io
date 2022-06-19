@@ -18,6 +18,7 @@ a {
 .nav-list:hover {
   cursor: pointer;
   color: #000;
+  /* font-weight: bold; */
 }
 
 .icons {
@@ -32,13 +33,17 @@ a {
 
 .sub-menu-list {
   list-style: none;
-  padding: 10px 25px;
+  padding: 10px 30px;
+  font-size: 16px;
+  
 }
 
 .nav-list:hover .sub-menu1 {
   display: block;
   position: absolute;
-  transition: 10ms ease-in-out;
+  /* transform: 5s ease-in-out; */
+  color: #000;
+  margin-top: 10px;
 }
 
 .sub-menu1 {
@@ -55,8 +60,8 @@ a {
   gap: 20px;
 }
 
-.drop-down-image{
-  padding-right: 8px;
+.drop-down-image {
+  padding-right: 10px;
 }
 
 .logo {
@@ -68,7 +73,19 @@ a {
 }
 
 .arrow {
-  font-size: 5px;
+  position: absolute;
+  top: 38px;
+  padding-left: 5px;
+}
+
+.arrow-up {
+  display: none;
+  position: absolute;
+  top: 38px;
+  padding-left: 5px;
+}
+
+.arrow:hover {
 }
 
 .register {
@@ -115,6 +132,7 @@ button:hover {
   background-color: #fff;
   color: #000;
   cursor: pointer;
+  font-weight: bold;
 }
 
 .desktop-view {
