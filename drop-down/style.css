@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Epilogue", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 10px;
+  color: grey;
+}
+
+.nav-list:hover {
+  cursor: pointer;
+  color: #000;
+  /* font-weight: bold; */
+}
+
+.icons {
+  padding: 0px 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.sub-menu-list {
+  list-style: none;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+.nav-list:hover .sub-menu1 {
+  display: block;
+  position: absolute;
+  /* transform: 5s ease-in-out; */
+  color: #000;
+  margin-top: 10px;
+}
+
+.sub-menu1 {
+  display: none;
+  font: size 15px;
+  background-color: #fff;
+  /* width: 150px; */
+  box-shadow: 3px 3px 2px 3px #dedada;
+  border-radius: 10px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.drop-down-image {
+  padding-right: 10px;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+#arrow-down {
+  position: absolute;
+  top: 38px;
+  padding-left: 5px;
+  visibility: 9999s, opacity 0.1s linear;
+}
+
+#arrow-up {
+  display: none;
+  position: absolute;
+  top: 38px;
+  padding-left: 5px;
+  transition: delay 2sec;
+}
+
+.register {
+  border-radius: 15px;
+  border: 2px solid #000;
+  /* padding: 10px 5px */
+}
+
+.second-container {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 70px;
+  /* margin: 50px 0 20px 0px; */
+}
+
+.paragraph {
+  color: grey;
+  font-size: 20px;
+  /* padding: 20px 0px; */
+}
+
+.paragraph-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+button {
+  background-color: #000;
+  color: white;
+  border-radius: 20px;
+  margin: 80px 0px;
+  padding: 20px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.desktop-view {
+  display: block;
+}
+
+.mobile-view {
+  display: none;
+}
+
+.images {
+  margin-top: 40px;
+}
+
+.third-container {
+  margin: 120px 0 20px 0px;
+}
+
+.fourth-container {
+  /* display: flex; */
+  gap: 20px;
+  justify-content: center;
+}
+
+.img {
+  width: 500px;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  background-color: rgb(197, 199, 236);
+  padding: 10px 0;
+}
