@@ -73,23 +73,6 @@ function playPause() {
     }
   }
 
-  // function playPause() {
-  //   if (playBtn) {
-  //     playSong();
-  //   } else {
-  //     pauseSong();
-  //   }
-  // }
-
-  // function playSong(){
-
-  //   isPlaying = true;
-  // }
-
-  // function pauseSong(){
-  //   isPlaying = false;
-  // }
-
 
 
 // To get the next song
