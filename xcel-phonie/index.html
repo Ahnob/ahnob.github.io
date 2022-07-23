@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonie</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <h2>make some magic here!!</h2> -->
+
+    <div class="flex">
+      <div>
+        <img src="./images/phonie-picture.png" class="img1" />
+      </div>
+      <div>
+        <h2 class="header">XCEL-PHONIE</h2>
+        <h2 class="h2">Welcome to the Family!!</h2>
+        <h2>
+          A workshop with over tweleve million<br />
+          influencers around the world
+        </h2>
+        <form>
+          <label for="first name">First Name </label><br />
+          <input
+            type="text"
+            name="First name"
+            id="name"
+            class="input"
+            placeholder="Enter your first name"
+            required
+          /><br />
+          <label for="last name">Last Name</label><br />
+          <input
+            type="text"
+            name="Last name"
+            id="name"
+            class="input"
+            placeholder="Enter your Last name"
+            required
+          /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            class="input"
+            id="email"
+            placeholder="Enter your email"
+            required
+          /><br />
+          <!-- <label>Choose a network</label>
+          <select
+            name="mobile operator"
+            id="mobileoperator"
+            class="input"
+            placeholder="mobile operator"
+          ><br/> -->
+          <label>Choose a network</label>
+          <div>
+            <img src="./images/9-mobile-image.png" class="img2" alt="9mobile" />
+            <img src="./images/Airtel-logo.webp" class="img2" alt="Airtel" />
+            <img src="./images/glo-image.jpg" class="img2" alt="glo" />
+            <img src="./images/MTN logo.png" class="img2" alt="mtn" />
+          </div>
+          <br />
+          <!-- <option value="Choose a network">Choose a network</option>
+            <option value="Airtel">Airtel</option>
+            <option value="Glo">Glo</option>
+            <option value="MTN">MTN</option>
+            <option value="9mobile">9mobile</option></select
+          ><br /> -->
+
+          <label for="Mobile number">Mobile Number</label><br />
+
+          <input
+            type="tel"
+            id="phone"
+            name="phone number"
+            id="phone"
+            pattern="[0-9]{3}[0-9]{4}[0-9]{3}"
+            placeholder="+234"
+            max-length="13"
+            class="input"
+            autocomplete="0n"
+            required
+          />
+          <button>Verify Number</button><br />
+          <button class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+    <script src="index.mjs" type="module"></script>
+    <!-- // ============= EEND DO NOT EDIT ============== // -->
+  </body>
+</html>
