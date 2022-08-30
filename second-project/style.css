@@ -102,7 +102,7 @@ button{
     }
 
     .hamburger.active{
-        transform: translateY(2px)rotate(360deg);
+        transform: translateY(2px)rotate(45deg);
         color: #000;
     }
 
@@ -126,7 +126,7 @@ button{
         width: 100%;
         transition: 0.2s;
         text-align: left;
-
+        align-items:flex-start;
     }
 
     .second-container.active{
