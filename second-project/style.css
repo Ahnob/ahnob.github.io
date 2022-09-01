@@ -4,6 +4,7 @@
     margin: 0;
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 
 }
 
@@ -24,7 +25,7 @@
     justify-content:space-between;
     /* padding: 30px;  */
     margin: 0 20px;
-    align-items: center;
+    /* align-items: center; */
 
 }
 
@@ -91,8 +92,9 @@ li{
 
 button{
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -102,7 +104,7 @@ button{
     }
 
     .hamburger.active{
-        transform: translateY(2px)rotate(360deg);
+        transform: translateX(5px)rotate(90deg);
         color: #000;
     }
 
@@ -124,13 +126,13 @@ button{
         flex-direction: column;
         background-color: #fff;
         width: 100%;
-        transition: 0.2s;
+        transition: 0.1s;
         text-align: left;
-
     }
 
     .second-container.active{
         left :0;
+        text-align: left;
     }
 
     li{
