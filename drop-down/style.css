@@ -59,12 +59,30 @@ a {
   gap: 20px;
 }
 
+.hamburger-menu{
+  display: flex;
+  gap: 20px;
+}
+
 .drop-down-image {
   padding-right: 10px;
 }
 
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+}
+
 .logo {
   margin-right: 10px;
+  width: 120px;
+
 }
 
 .flex {
@@ -109,6 +127,10 @@ h1 {
   color: grey;
   font-size: 20px;
   /* padding: 20px 0px; */
+}
+
+.close{
+  display: none;
 }
 
 .paragraph-container {
@@ -172,19 +194,31 @@ footer {
   padding: 10px 0;
 }
 
-.hamburger {
-  display: none;
+li{
+  list-style: none;
 }
 
-@media (max-width: 750px) {
+.hamburger {
+  /* display: none; */
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
   .hamburger {
     display: block;
   }
 
-  .second-container {
-    display: flex;
+  .nav-menu{
     flex-direction: column;
   }
+  
+  .nav-list{
+    display: none;
+  }
+
 
   .desktop-view {
     display: none;
@@ -192,5 +226,22 @@ footer {
 
   .mobile-view {
     display: block;
+  }
+
+  .close{
+    display: none;
+  }
+
+  .second-container{
+    flex-direction:column;
+    gap: 10px;
+    justify-content: center;
+    width: 1200px;
+    min-width:700px;
+    max-width: 1920px;
+  }
+
+  button{
+    margin: 80px auto;
   }
 }

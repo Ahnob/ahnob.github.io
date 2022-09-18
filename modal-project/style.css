@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(https://jpeg.org/images/jpegsystems-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.first-container{
+    width: 600px;
+    background: #fff;
+    box-shadow: 2px 2px rgb(247, 234, 234);
+    border-radius: 10px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 200px;
+    left: 30%;
+    padding: 40px;
+    
+
+}
+
+
+.project{
+    padding: 30px;
+    font-size: 40px;
+    color: rgb(10, 39, 82);
+    font-weight:bolder;
+    letter-spacing: 2px;
+
+}
+
+button{
+    border: none;
+    font-size: 15px;
+    color:#fff ;
+    background:rgb(51, 120, 211);
+    cursor: pointer;
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-bottom: 20px;
+
+}
+
+button:hover{
+color: rgb(49, 128, 165);
+background: #fff;
+border: 2px solid rgb(51, 120, 211);
+transition: 0.2sec;
+}

@@ -4,22 +4,18 @@ const elements = document.querySelectorAll(".drop-down");
 // adding the event listener by looping
 elements.forEach((element) => {
   element.addEventListener("mouseover", (e) => {
-    alert("someone hit me");
-    
+    // alert("someone hit me");
   });
 });
 
-// function changeImage() {
-//   if (
-//     document.querySelector("imgClickAndChange").src ==
-//     "../images/icon-arrow-down.svg"
-//   ) {
-//     document.getElementById("imgClickAndChange").src =
-//       "../images/icon-arrow-up.svg";
-//   } else {
-//     document.getElementById("imgClickAndChange").src =
-//       "../images/icon-arrow-down.svg";
-//   }
-// }
+// document.ready(function () {
+//   document.getElementByClassName("hidden").mouseenter(function () {
+//     document
+//       .getElementByClassName("show")
+//       .classList.remove("show")
+//       .classList.add("hidden");
+//     this.classList.remove("hidden").classList.add("show");
+//   });
+// });
 
-// console.log(changeImage)
+const number = "12";

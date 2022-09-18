@@ -9,9 +9,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
@@ -23,26 +21,17 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
   </head>
   <body>
-
     <nav class="nav-bar">
+      <img src="images/logo.svg" class="nav-menu" alt="logo" class="logo" />
       <ul class="nav-menu">
-        <img src="images/logo.svg" alt="logo" class="logo" />
         <li class="nav-list">
-           <a href="#" class="drop-down">
-              Features
-                <img 
-                src="images/icon-arrow-down.svg" 
-                onmouseover="this.src='images/icon-arrow-up.svg'" 
-                onmouseout="this.src='images/icon-arrow-down.svg'"  
-                id="arrow-down"
-                alt="icon-arrow-down"
-                class="arrow change-icon"
-             />
-            </a> 
-
-            
-          </i>
-
+          <a href="#" class="drop-down">
+            Features
+            <img
+              src="images/icon-arrow-down.svg"
+              alt="arrow-down"
+            />
+          </a>
           <div class="sub-menu1">
             <ul>
               <li class="sub-menu-list">
@@ -82,23 +71,17 @@
         <li class="nav-list">
           <a href="#" class="drop-down">
             Company
-            <img 
-            src="images/icon-arrow-down.svg" 
-            onmouseover="this.src='images/icon-arrow-up.svg'" 
-            onmouseout="this.src='images/icon-arrow-down.svg'"  
-            id="arrow-down"
-            alt="icon-arrow-down"
-            class="arrow change-icon"
+            <img
+              src="images/icon-arrow-down.svg"
+             alt="arrow-down"
             />
           </a>
-
           <div class="sub-menu1">
             <ul>
               <li class="sub-menu-list"><a href="#"></a>History</li>
               <li class="sub-menu-list"><a href="#"></a>Our Team</li>
               <li class="sub-menu-list"><a href="#"></a>Blog</li>
             </ul>
-          </div>
         </li>
         <li class="nav-list">
           <a href="#">Careers</a>
@@ -114,10 +97,19 @@
         <li class="nav-list register">
           <a href="#"> Register</a>
         </li>
+         <img
+         class="mobile-view hamburger"
+         src="/images/icon-menu.svg"
+         alt="hero-image"/>
+         <img
+         class="mobile-view hamburger close"
+         src="/images/icon-close-menu.svg"
+         alt="hero-image"/>
       </ul>
     </nav>
 
-    <div class="container">
+    
+    <div class="container desktop-view">
       <div class="second-container">
         <div class="third-container">
           <h1>Make</h1>
@@ -133,19 +125,18 @@
           </div>
           <button>Learn more</button>
           <div class="images">
-            <img src="/images/client-databiz.svg" alt="databiz" class="icons" />
-
-            <img
-              src="/images/client-audiophile.svg"
-              alt="audiophile"
-              class="icons"
+           <img src="/images/client-databiz.svg" alt="databiz" class="icons" />
+  
+           <img
+             src="/images/client-audiophile.svg"
+             alt="audiophile"
+             class="icons"
             />
-
             <img src="/images/client-meet.svg" alt="meet" class="icons" />
-
             <img src="/images/client-maker.svg" alt="maker" class="icons" />
           </div>
         </div>
+        
         <div>
           <img
             class="desktop-view img"
@@ -153,20 +144,61 @@
             alt="hero-image"
           />
           <img
-            class="mobile-view"
-            src="/images/image-hero-mobile.png"
+            class="mobile-view img"
+            src="/images/image-hero-desktop.png"
+            alt="hero-image"
+          />   
+        </div>
+        
+      </div>
+     
+    </div>
+
+    <div class="container mobile-view">
+      <div class="second-container">
+        <div>
+          <img
+            class="mobile-view img"
+            src="/images/image-hero-desktop.png"
             alt="hero-image"
           />
+      </div>
+        <div class="third-container">
+          <h1>Make</h1>
+          <h1>remote work</h1>
+          <div class="paragraph-container">
+            <p class="paragraph">
+              Get your team in sync, no matter your location.
+            </p>
+            <p class="paragraph">
+              Streamline processes, create team rituals, and
+            </p>
+            <p class="paragraph">watch productivity soar.</p>
+          </div>
+          <button>Learn more</button>
+        </div>
+    
+        <div class="images">
+          <img src="/images/client-databiz.svg" alt="databiz" class="icons" />
+
+          <img
+            src="/images/client-audiophile.svg"
+            alt="audiophile"
+            class="icons"
+          />
+          <img src="/images/client-meet.svg" alt="meet" class="icons" />
+          <img src="/images/client-maker.svg" alt="maker" class="icons" />
         </div>
       </div>
     </div>
 
+<!-- 
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Anob Takon</a>.
-    </footer>
+    </footer> -->
     <script src="script.js"></script>
   </body>
 </html>
