@@ -5,7 +5,7 @@ body{
 h1{
   margin-left: 450px;
 }
-}
+
 header{
   font-size: 30px;
 }
@@ -34,8 +34,12 @@ justify-content:flex-end;
 .nav-link{
  display:flex;
  margin-right: 30px;
-
 }
+
+a{
+text-decoration: none;
+}
+
 #header-image{
  width: 100px;
  margin: auto;
