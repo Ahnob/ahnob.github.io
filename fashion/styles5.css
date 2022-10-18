@@ -2,6 +2,7 @@ body{
   background-color: #fff5b7;
   font-size: 20px;
 }
+
 h1{
   margin-left: 450px;
 }
@@ -16,9 +17,11 @@ div{
   align-items: center;
   flex-direction: column;
 }
+
 .p1{
 display: flex;
 justify-content: center;
+padding: 30px;
 }
 
 #nav-bar{
@@ -46,6 +49,7 @@ text-decoration: none;
  float: left;
  display: block;
 }
+
 @media screen and (min-width: 1200px) {
  #navbar{
    width: 100%;
@@ -70,5 +74,6 @@ text-decoration: none;
  margin-bottom: 100px;
  margin-top: 20px;
  font-size: 30px;
+ border: none;
 
 }
