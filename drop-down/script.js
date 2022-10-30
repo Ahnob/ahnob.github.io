@@ -18,4 +18,16 @@ elements.forEach((element) => {
 //   });
 // });
 
-const number = "12";
+// const number = "12";
+
+const arise = [
+  "Jonas",
+  "Glory",
+  2012 - 2019,
+  "Software Developer",
+  ["Anob", "Roses", "Flowers"],
+];
+
+for (let i = arise.length - 1; i > 0; i--) {
+  console.log(arise[i]);
+}

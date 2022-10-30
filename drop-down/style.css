@@ -216,7 +216,15 @@ li{
   }
   
   .nav-list{
-    display: none;
+    display: grid;
+    /* position: flex; */
+    top: 0;
+    grid-row-end: 3;
+  }
+
+  .nav-bar{
+    display: grid;
+
   }
 
 
