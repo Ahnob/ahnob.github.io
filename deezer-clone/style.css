@@ -449,6 +449,10 @@ li {
   scale: 1.1;
 }
 
+:hover.animated-gift-card-3 {
+  scale: 0.1;
+}
+
 .animated-gift-card-3 {
   left: 170px;
   top: 70px;
